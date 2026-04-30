@@ -1131,7 +1131,7 @@ textarea.form-control {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(10, 77, 140, 0.88) 0%, rgba(7, 58, 107, 0.94) 100%);
+  background: linear-gradient(135deg, rgba(10, 77, 140, 0.55) 0%, rgba(7, 58, 107, 0.65) 100%);
   z-index: 1;
 }
 
