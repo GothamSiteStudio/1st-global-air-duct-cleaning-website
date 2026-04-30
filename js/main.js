@@ -193,6 +193,19 @@
     });
   });
 
+  // ---------- Video Play Button ----------
+  const playOverlays = document.querySelectorAll('.play-overlay');
+  playOverlays.forEach(overlay => {
+    overlay.addEventListener('click', function() {
+      const video = this.parentElement.querySelector('video');
+      if (video) {
+        video.play();
+        video.setAttribute('controls', '');
+        this.classList.add('hidden');
+      }
+    });
+  });
+
   // ---------- Sticky header shrink on scroll ----------
   const header = document.querySelector('.header');
   let lastScroll = 0;
