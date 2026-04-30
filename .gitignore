@@ -1,0 +1,43 @@
+# Internal planning documents (not for public repo)
+PLAN.md
+WEBSITE_REBUILD_PLAN.md
+
+# Old/typo folder (logo is in images/)
+imgaes/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+dist/
+build/
+.cache/
+
+# Dependency directories
+node_modules/
+
+# Temporary files
+*.tmp
+*.bak
