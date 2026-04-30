@@ -207,9 +207,7 @@
   });
 
   // ---------- Before/After Image Sliders ----------
-  const sliders = document.querySelectorAll('.ba-slider');
-
-  sliders.forEach(slider => {
+  function initBeforeAfterSlider(slider) {
     let isDragging = false;
 
     function setPos(clientX) {
@@ -217,41 +215,50 @@
       let percentage = ((clientX - rect.left) / rect.width) * 100;
       percentage = Math.max(0, Math.min(100, percentage));
       slider.style.setProperty('--pos', percentage + '%');
+      slider.setAttribute('aria-valuenow', Math.round(percentage));
     }
 
-    function onPointerDown(e) {
+    function getX(e) {
+      if (e.touches && e.touches.length > 0) return e.touches[0].clientX;
+      if (e.changedTouches && e.changedTouches.length > 0) return e.changedTouches[0].clientX;
+      return e.clientX;
+    }
+
+    function onStart(e) {
       isDragging = true;
-      const x = e.touches ? e.touches[0].clientX : e.clientX;
-      setPos(x);
-      e.preventDefault();
+      slider.classList.add('is-dragging');
+      setPos(getX(e));
+      if (e.cancelable) e.preventDefault();
     }
 
-    function onPointerMove(e) {
+    function onMove(e) {
       if (!isDragging) return;
-      const x = e.touches ? e.touches[0].clientX : e.clientX;
-      setPos(x);
+      setPos(getX(e));
+      if (e.cancelable) e.preventDefault();
     }
 
-    function onPointerUp() {
+    function onEnd() {
       isDragging = false;
+      slider.classList.remove('is-dragging');
     }
 
-    // Mouse events
-    slider.addEventListener('mousedown', onPointerDown);
-    document.addEventListener('mousemove', onPointerMove);
-    document.addEventListener('mouseup', onPointerUp);
+    // Mouse events on slider
+    slider.addEventListener('mousedown', onStart);
 
-    // Touch events
-    slider.addEventListener('touchstart', onPointerDown, { passive: false });
-    document.addEventListener('touchmove', onPointerMove, { passive: true });
-    document.addEventListener('touchend', onPointerUp);
+    // Touch events on slider
+    slider.addEventListener('touchstart', onStart, { passive: false });
 
-    // Click to set position
-    slider.addEventListener('click', e => {
-      if (!isDragging) setPos(e.clientX);
-    });
+    // Move/End on window so dragging continues even outside slider
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onEnd);
+    window.addEventListener('touchmove', onMove, { passive: false });
+    window.addEventListener('touchend', onEnd);
+    window.addEventListener('touchcancel', onEnd);
 
-    // Keyboard support for accessibility
+    // Initial position
+    slider.style.setProperty('--pos', '50%');
+
+    // Accessibility
     slider.setAttribute('tabindex', '0');
     slider.setAttribute('role', 'slider');
     slider.setAttribute('aria-label', 'Drag to compare before and after images');
@@ -259,18 +266,23 @@
     slider.setAttribute('aria-valuemax', '100');
     slider.setAttribute('aria-valuenow', '50');
 
-    slider.addEventListener('keydown', e => {
+    slider.addEventListener('keydown', function(e) {
       const currentPos = parseFloat(slider.style.getPropertyValue('--pos')) || 50;
       let newPos = currentPos;
       if (e.key === 'ArrowLeft') newPos = Math.max(0, currentPos - 5);
       if (e.key === 'ArrowRight') newPos = Math.min(100, currentPos + 5);
+      if (e.key === 'Home') newPos = 0;
+      if (e.key === 'End') newPos = 100;
       if (newPos !== currentPos) {
         slider.style.setProperty('--pos', newPos + '%');
         slider.setAttribute('aria-valuenow', Math.round(newPos));
         e.preventDefault();
       }
     });
-  });
+  }
+
+  // Initialize all sliders on the page
+  document.querySelectorAll('.ba-slider').forEach(initBeforeAfterSlider);
 
   // ---------- Sticky header shrink on scroll ----------
   const header = document.querySelector('.header');

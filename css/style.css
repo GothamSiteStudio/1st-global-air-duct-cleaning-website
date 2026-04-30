@@ -1406,15 +1406,19 @@ textarea.form-control {
 .ba-slider {
   position: relative;
   width: 100%;
-  aspect-ratio: 4/3;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* 4:3 aspect ratio (padding-bottom hack — works in all browsers) */
   overflow: hidden;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   user-select: none;
+  -webkit-user-select: none;
   cursor: ew-resize;
   background: var(--color-bg-alt);
   --pos: 50%;
-  touch-action: pan-y;
+  touch-action: none;
+  box-sizing: border-box;
 }
 
 .ba-slider:hover {
@@ -1423,16 +1427,25 @@ textarea.form-control {
 
 .ba-slider .ba-img {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   pointer-events: none;
   display: block;
+  -webkit-user-drag: none;
+}
+
+.ba-slider .ba-img-after {
+  z-index: 1;
 }
 
 .ba-slider .ba-img-before {
   clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+  -webkit-clip-path: inset(0 calc(100% - var(--pos)) 0 0);
   z-index: 2;
 }
 
@@ -1446,7 +1459,7 @@ textarea.form-control {
   z-index: 3;
   transform: translateX(-50%);
   pointer-events: none;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }
 
 .ba-slider .ba-handle-circle {
@@ -1457,58 +1470,59 @@ textarea.form-control {
   width: 48px;
   height: 48px;
   background: white;
-  border-radius: var(--radius-full);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   pointer-events: none;
 }
 
 .ba-slider .ba-handle-circle svg {
   color: var(--color-primary);
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
 }
 
 .ba-slider .ba-label {
   position: absolute;
-  top: var(--space-md);
-  padding: 6px 14px;
-  background: rgba(0, 0, 0, 0.7);
+  top: 12px;
+  padding: 5px 12px;
+  background: rgba(0, 0, 0, 0.75);
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  border-radius: var(--radius-sm);
+  border-radius: 4px;
   pointer-events: none;
   z-index: 4;
-  backdrop-filter: blur(4px);
 }
 
 .ba-slider .ba-label-before {
-  left: var(--space-md);
+  left: 12px;
 }
 
 .ba-slider .ba-label-after {
-  right: var(--space-md);
+  right: 12px;
 }
 
 .ba-slider:active {
   cursor: grabbing;
 }
 
-.ba-slider:active .ba-handle-circle {
-  transform: translate(-50%, -50%) scale(1.1);
+.ba-slider.is-dragging .ba-handle-circle {
+  transform: translate(-50%, -50%) scale(1.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
 .ba-sliders-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-lg);
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .ba-sliders-grid-2col {
@@ -1517,12 +1531,15 @@ textarea.form-control {
   gap: var(--space-lg);
   max-width: 1100px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .ba-sliders-grid-3col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
+  width: 100%;
+  max-width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -1532,9 +1549,11 @@ textarea.form-control {
 }
 
 @media (max-width: 700px) {
+  .ba-sliders-grid,
   .ba-sliders-grid-2col,
   .ba-sliders-grid-3col {
     grid-template-columns: 1fr;
+    gap: var(--space-md);
   }
 
   .ba-slider .ba-handle-circle {
@@ -1542,8 +1561,13 @@ textarea.form-control {
     height: 40px;
   }
 
+  .ba-slider .ba-handle-circle svg {
+    width: 18px;
+    height: 18px;
+  }
+
   .ba-slider .ba-label {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     padding: 4px 10px;
   }
 }
