@@ -1042,6 +1042,29 @@ textarea.form-control {
   color: white;
 }
 
+.footer-credit {
+  text-align: center;
+  padding-top: var(--space-md);
+  margin-top: var(--space-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.02em;
+}
+
+.footer-credit a {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+  padding-bottom: 1px;
+}
+
+.footer-credit a:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
 /* ---------- Mobile Sticky Call Button ---------- */
 .sticky-call {
   display: none;
