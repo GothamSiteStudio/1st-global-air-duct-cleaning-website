@@ -1086,14 +1086,14 @@ textarea.form-control {
   border-bottom-color: var(--color-accent);
 }
 
-/* ---------- Hero Video Background ---------- */
-.hero-with-video {
+/* ---------- Hero Image Background ---------- */
+.hero-with-image-bg {
   position: relative;
   isolation: isolate;
   overflow: hidden;
 }
 
-.hero-video-bg {
+.hero-bg-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -1102,6 +1102,7 @@ textarea.form-control {
   object-fit: cover;
   z-index: 0;
   pointer-events: none;
+  filter: saturate(0.85);
 }
 
 .hero-overlay {
@@ -1111,13 +1112,9 @@ textarea.form-control {
   z-index: 1;
 }
 
-.hero-with-video > .container {
+.hero-with-image-bg > .container {
   position: relative;
   z-index: 2;
-}
-
-.hero-with-video::before {
-  display: none;
 }
 
 /* ---------- Review Badges (Clickable Images) ---------- */
@@ -1166,23 +1163,48 @@ textarea.form-control {
   margin-bottom: var(--space-md);
 }
 
-/* ---------- Our Work Section (Photo Gallery) ---------- */
-.work-photo-grid {
+/* ---------- Our Work Section (Video + Images Layout) ---------- */
+.work-showcase {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1.5fr 1fr;
   gap: var(--space-lg);
+  align-items: stretch;
 }
 
-.work-photo-item {
+.work-video-wrap {
+  position: relative;
+  background: var(--color-bg-dark);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 16/10;
+  box-shadow: var(--shadow-xl);
+}
+
+.work-video-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.work-images-stack {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--space-lg);
+  min-width: 0;
+}
+
+.work-image-item {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
-  aspect-ratio: 4/3;
+  position: relative;
   background: var(--color-bg-alt);
   border: 1px solid var(--color-border);
+  min-width: 0;
 }
 
-.work-photo-item img {
+.work-image-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1190,7 +1212,7 @@ textarea.form-control {
   transition: transform var(--transition-slow);
 }
 
-.work-photo-item:hover img {
+.work-image-item:hover img {
   transform: scale(1.05);
 }
 
@@ -1263,6 +1285,21 @@ textarea.form-control {
 }
 
 /* ---------- Responsive Adjustments for Work Section ---------- */
+@media (max-width: 1024px) {
+  .work-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .work-images-stack {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .work-image-item {
+    aspect-ratio: 4/3;
+  }
+}
+
 @media (max-width: 768px) {
   .review-badges {
     gap: var(--space-md);
@@ -1278,25 +1315,7 @@ textarea.form-control {
     max-height: 45px;
   }
 
-  .work-photo-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-md);
-  }
-
-  /* On mobile, replace hero video with poster image to save bandwidth */
-  .hero-video-bg {
-    display: none;
-  }
-
-  .hero-with-video {
-    background-image: linear-gradient(135deg, rgba(10, 77, 140, 0.88) 0%, rgba(7, 58, 107, 0.94) 100%), url('../images/video-poster.webp');
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .work-photo-grid {
+  .work-images-stack {
     grid-template-columns: 1fr;
   }
 }

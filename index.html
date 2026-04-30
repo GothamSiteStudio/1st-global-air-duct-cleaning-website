@@ -73,7 +73,7 @@
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
+      "ratingValue": "5",
       "reviewCount": "100"
     }
   }
@@ -180,12 +180,9 @@
     </div>
   </header>
 
-  <!-- Hero Section with Video Background -->
-  <section class="hero hero-with-video">
-    <video class="hero-video-bg" autoplay muted loop playsinline preload="metadata" poster="images/video-poster.webp">
-      <source src="images/work.mov" type="video/quicktime">
-      <source src="images/work.mov" type="video/mp4">
-    </video>
+  <!-- Hero Section with Image Background -->
+  <section class="hero hero-with-image-bg">
+    <img class="hero-bg-image" src="images/video-poster.webp" alt="" aria-hidden="true">
     <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-content">
@@ -220,7 +217,7 @@
           </div>
 
           <div class="hero-trust">
-            <div class="hero-trust-item">⭐⭐⭐⭐⭐ 4.9/5 Reviews</div>
+            <div class="hero-trust-item">⭐⭐⭐⭐⭐ 5/5 Reviews</div>
             <div class="hero-trust-item">🛡️ Fully Insured</div>
             <div class="hero-trust-item">🏆 11+ Years in Business</div>
           </div>
@@ -367,24 +364,30 @@
     </div>
   </section>
 
-  <!-- Our Work Section: Photo Gallery -->
+  <!-- Our Work Section: Video + Photos -->
   <section>
     <div class="container">
       <div class="section-header">
         <span class="section-eyebrow">From the Field</span>
         <h2>Our Work — Real Jobs, Real Results</h2>
-        <p class="lead">Photos from real St. Louis homes and businesses we've served. Family-owned and trusted since 2014.</p>
+        <p class="lead">Watch us in action and see photos from real St. Louis homes we've served. Family-owned and trusted since 2014.</p>
       </div>
 
-      <div class="work-photo-grid">
-        <div class="work-photo-item">
-          <img src="images/work-photo.jpg" alt="1st Global technician cleaning air ducts in a St. Louis home" loading="lazy">
+      <div class="work-showcase">
+        <div class="work-video-wrap">
+          <video controls preload="metadata" poster="images/video-poster.webp" muted playsinline>
+            <source src="images/work.mov" type="video/quicktime">
+            <source src="images/work.mov" type="video/mp4">
+            Your browser doesn't support video. <a href="images/work.mov">Download the video</a>.
+          </video>
         </div>
-        <div class="work-photo-item">
-          <img src="images/team-work.jpg" alt="Our team performing professional duct cleaning service" loading="lazy">
-        </div>
-        <div class="work-photo-item">
-          <img src="images/hero-tech-working.jpg" alt="Professional air duct cleaning equipment in action" loading="lazy">
+        <div class="work-images-stack">
+          <div class="work-image-item">
+            <img src="images/hero-tech-working.jpg" alt="1st Global technician at work in a St. Louis home" loading="lazy">
+          </div>
+          <div class="work-image-item">
+            <img src="images/duct-cleaner.webp" alt="Professional air duct cleaning equipment in action" loading="lazy">
+          </div>
         </div>
       </div>
     </div>
