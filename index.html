@@ -180,8 +180,13 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- Hero Section with Video Background -->
+  <section class="hero hero-with-video">
+    <video class="hero-video-bg" autoplay muted loop playsinline preload="metadata" poster="images/video-poster.webp">
+      <source src="images/work.mov" type="video/quicktime">
+      <source src="images/work.mov" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
@@ -362,58 +367,24 @@
     </div>
   </section>
 
-  <!-- Our Work Section: Video + Gallery -->
+  <!-- Our Work Section: Photo Gallery -->
   <section>
     <div class="container">
       <div class="section-header">
-        <span class="section-eyebrow">See It In Action</span>
+        <span class="section-eyebrow">From the Field</span>
         <h2>Our Work — Real Jobs, Real Results</h2>
-        <p class="lead">Watch what we do every day. From St. Louis homes to commercial properties — see the difference professional cleaning makes.</p>
+        <p class="lead">Photos from real St. Louis homes and businesses we've served. Family-owned and trusted since 2014.</p>
       </div>
 
-      <!-- Video + Featured Images -->
-      <div class="work-showcase">
-        <div class="work-video-wrap">
-          <video preload="metadata" poster="images/video-poster.webp" muted playsinline>
-            <source src="images/work.mov" type="video/quicktime">
-            <source src="images/work.mov" type="video/mp4">
-            Your browser doesn't support video. <a href="images/work.mov">Download the video</a>.
-          </video>
-          <div class="play-overlay" role="button" tabindex="0" aria-label="Play video">
-            <div class="play-button">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--color-primary)" stroke="var(--color-primary)" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            </div>
-          </div>
+      <div class="work-photo-grid">
+        <div class="work-photo-item">
+          <img src="images/work-photo.jpg" alt="1st Global technician cleaning air ducts in a St. Louis home" loading="lazy">
         </div>
-        <div class="work-images-stack">
-          <div class="work-image-item">
-            <img src="images/work-photo.jpg" alt="1st Global technician cleaning air ducts in a St. Louis home" loading="lazy">
-          </div>
-          <div class="work-image-item">
-            <img src="images/team-work.jpg" alt="Our team performing professional duct cleaning service" loading="lazy">
-          </div>
+        <div class="work-photo-item">
+          <img src="images/team-work.jpg" alt="Our team performing professional duct cleaning service" loading="lazy">
         </div>
-      </div>
-
-      <!-- Image Gallery Grid -->
-      <div class="work-gallery-grid">
-        <div class="work-gallery-item">
-          <img src="images/service-1.webp" alt="Air duct cleaning equipment in action" loading="lazy">
-        </div>
-        <div class="work-gallery-item">
-          <img src="images/service-2.webp" alt="Before and after duct cleaning results" loading="lazy">
-        </div>
-        <div class="work-gallery-item">
-          <img src="images/service-3.webp" alt="Professional HVAC cleaning service" loading="lazy">
-        </div>
-        <div class="work-gallery-item">
-          <img src="images/service-4.webp" alt="Detailed duct inspection and cleaning" loading="lazy">
-        </div>
-        <div class="work-gallery-item">
-          <img src="images/service-5.webp" alt="St. Louis air duct cleaning results" loading="lazy">
-        </div>
-        <div class="work-gallery-item">
-          <img src="images/service-6.webp" alt="Dryer vent cleaning safety service" loading="lazy">
+        <div class="work-photo-item">
+          <img src="images/hero-tech-working.jpg" alt="Professional air duct cleaning equipment in action" loading="lazy">
         </div>
       </div>
     </div>

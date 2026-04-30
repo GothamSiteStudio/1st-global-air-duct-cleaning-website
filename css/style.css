@@ -910,6 +910,27 @@ textarea.form-control {
   color: white;
   padding: var(--space-3xl) 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.28;
+  z-index: 0;
+  filter: saturate(0.8);
+}
+
+.page-header > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-header.with-image {
+  padding: var(--space-4xl) 0;
 }
 
 .page-header h1 {
@@ -1065,22 +1086,38 @@ textarea.form-control {
   border-bottom-color: var(--color-accent);
 }
 
-/* ---------- Hero Image Background ---------- */
-.hero-with-image {
+/* ---------- Hero Video Background ---------- */
+.hero-with-video {
   position: relative;
   isolation: isolate;
+  overflow: hidden;
 }
 
-.hero-with-image::after {
-  content: '';
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-overlay {
   position: absolute;
   inset: 0;
-  background-image: url('../images/hero-tech-working.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.12;
-  z-index: -1;
-  pointer-events: none;
+  background: linear-gradient(135deg, rgba(10, 77, 140, 0.88) 0%, rgba(7, 58, 107, 0.94) 100%);
+  z-index: 1;
+}
+
+.hero-with-video > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-with-video::before {
+  display: none;
 }
 
 /* ---------- Review Badges (Clickable Images) ---------- */
@@ -1129,114 +1166,32 @@ textarea.form-control {
   margin-bottom: var(--space-md);
 }
 
-/* ---------- Our Work Section (Video + Gallery) ---------- */
-.work-showcase {
+/* ---------- Our Work Section (Photo Gallery) ---------- */
+.work-photo-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: var(--space-xl);
-  align-items: stretch;
-  margin-bottom: var(--space-2xl);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
 }
 
-.work-video-wrap {
-  position: relative;
-  background: var(--color-bg-dark);
+.work-photo-item {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 16/10;
-  box-shadow: var(--shadow-xl);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 4/3;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
 }
 
-.work-video-wrap video {
+.work-photo-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-.work-video-wrap .play-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(10, 77, 140, 0.4);
-  cursor: pointer;
-  transition: background var(--transition-base);
-  z-index: 2;
-}
-
-.work-video-wrap .play-overlay:hover {
-  background: rgba(10, 77, 140, 0.6);
-}
-
-.work-video-wrap .play-overlay.hidden {
-  display: none;
-}
-
-.play-button {
-  width: 80px;
-  height: 80px;
-  border-radius: var(--radius-full);
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow-xl);
-  transition: transform var(--transition-base);
-}
-
-.work-video-wrap .play-overlay:hover .play-button {
-  transform: scale(1.1);
-}
-
-.work-images-stack {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: var(--space-md);
-}
-
-.work-image-item {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  position: relative;
-  aspect-ratio: 4/3;
-}
-
-.work-image-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   transition: transform var(--transition-slow);
 }
 
-.work-image-item:hover img {
+.work-photo-item:hover img {
   transform: scale(1.05);
-}
-
-.work-gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--space-md);
-}
-
-.work-gallery-item {
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  aspect-ratio: 1;
-  box-shadow: var(--shadow-md);
-}
-
-.work-gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-slow);
-}
-
-.work-gallery-item:hover img {
-  transform: scale(1.08);
 }
 
 /* ---------- Trustindex Reviews Widget ---------- */
@@ -1308,17 +1263,6 @@ textarea.form-control {
 }
 
 /* ---------- Responsive Adjustments for Work Section ---------- */
-@media (max-width: 1024px) {
-  .work-showcase {
-    grid-template-columns: 1fr;
-  }
-
-  .work-images-stack {
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media (max-width: 768px) {
   .review-badges {
     gap: var(--space-md);
@@ -1334,17 +1278,26 @@ textarea.form-control {
     max-height: 45px;
   }
 
-  .work-images-stack {
-    grid-template-columns: 1fr;
-  }
-
-  .work-gallery-grid {
+  .work-photo-grid {
     grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
   }
 
-  .play-button {
-    width: 60px;
-    height: 60px;
+  /* On mobile, replace hero video with poster image to save bandwidth */
+  .hero-video-bg {
+    display: none;
+  }
+
+  .hero-with-video {
+    background-image: linear-gradient(135deg, rgba(10, 77, 140, 0.88) 0%, rgba(7, 58, 107, 0.94) 100%), url('../images/video-poster.webp');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-photo-grid {
+    grid-template-columns: 1fr;
   }
 }
 
