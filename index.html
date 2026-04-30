@@ -213,7 +213,7 @@
           </div>
 
           <div class="hero-cta">
-            <a href="contact.html" class="btn btn-primary btn-large">Get Free Estimate</a>
+            <a href="#contact-form" class="btn btn-primary btn-large">Get Free Estimate</a>
             <a href="tel:+13147183632" class="btn btn-secondary btn-large" style="background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.4);">Call (314) 718-3632</a>
           </div>
 
@@ -223,40 +223,37 @@
             <div class="hero-trust-item">🏆 11+ Years in Business</div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="hero-form-card">
-          <h3>Get Your Free Estimate</h3>
-          <p class="lead">No obligation. We'll respond within 30 minutes during business hours.</p>
+  <!-- Our Work Section: Video + Photos -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">From the Field</span>
+        <h2>Our Work — Real Jobs, Real Results</h2>
+        <p class="lead">Watch us in action and see photos from real St. Louis homes we've served. Family-owned and trusted since 2014.</p>
+      </div>
 
-          <form action="#" method="POST" id="heroForm">
-            <div class="form-group">
-              <label for="hero-name">Full Name</label>
-              <input type="text" id="hero-name" name="name" class="form-control" placeholder="John Smith" required>
-            </div>
-            <div class="form-group">
-              <label for="hero-phone">Phone Number</label>
-              <input type="tel" id="hero-phone" name="phone" class="form-control" placeholder="(314) 555-0123" required>
-            </div>
-            <div class="form-group">
-              <label for="hero-service">Service Needed</label>
-              <select id="hero-service" name="service" class="form-control" required>
-                <option value="">Select a service…</option>
-                <option value="air-duct-cleaning">Air Duct Cleaning</option>
-                <option value="dryer-vent-cleaning">Dryer Vent Cleaning</option>
-                <option value="air-duct-maintenance">Air Duct Maintenance</option>
-                <option value="air-duct-installation">Air Duct Installation</option>
-                <option value="air-duct-repair">Air Duct Repair</option>
-                <option value="commercial">Commercial Service</option>
-                <option value="other">Other / Not Sure</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="hero-zip">ZIP Code</label>
-              <input type="text" id="hero-zip" name="zip" class="form-control" placeholder="63118" pattern="[0-9]{5}" required>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block btn-large">Get My Free Estimate</button>
-            <p class="form-note">🔒 Your information is safe with us. We never share or sell your data.</p>
-          </form>
+      <div class="work-showcase">
+        <!-- 2 images side-by-side -->
+        <div class="work-images-row">
+          <div class="work-image-item">
+            <img src="images/hero-tech-working.jpg" alt="1st Global technician at work in a St. Louis home" loading="lazy">
+          </div>
+          <div class="work-image-item">
+            <img src="images/duct-cleaner.webp" alt="Professional air duct cleaning equipment in action" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Video below, full width -->
+        <div class="work-video-wrap">
+          <video controls preload="metadata" poster="images/video-poster.webp" muted playsinline>
+            <source src="images/work.mov" type="video/quicktime">
+            <source src="images/work.mov" type="video/mp4">
+            Your browser doesn't support video. <a href="images/work.mov">Download the video</a>.
+          </video>
         </div>
       </div>
     </div>
@@ -361,38 +358,6 @@
             Learn More →
           </a>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Our Work Section: Video + Photos -->
-  <section>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">From the Field</span>
-        <h2>Our Work — Real Jobs, Real Results</h2>
-        <p class="lead">Watch us in action and see photos from real St. Louis homes we've served. Family-owned and trusted since 2014.</p>
-      </div>
-
-      <div class="work-showcase">
-        <!-- 2 images side-by-side -->
-        <div class="work-images-row">
-          <div class="work-image-item">
-            <img src="images/hero-tech-working.jpg" alt="1st Global technician at work in a St. Louis home" loading="lazy">
-          </div>
-          <div class="work-image-item">
-            <img src="images/duct-cleaner.webp" alt="Professional air duct cleaning equipment in action" loading="lazy">
-          </div>
-        </div>
-
-        <!-- Video below, full width -->
-        <div class="work-video-wrap">
-          <video controls preload="metadata" poster="images/video-poster.webp" muted playsinline>
-            <source src="images/work.mov" type="video/quicktime">
-            <source src="images/work.mov" type="video/mp4">
-            Your browser doesn't support video. <a href="images/work.mov">Download the video</a>.
-          </video>
-        </div>
       </div>
     </div>
   </section>
@@ -949,13 +914,78 @@
     </div>
   </section>
 
+  <!-- Contact Form Section -->
+  <section class="bg-alt" id="contact-form">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2>Request Your Free Estimate</h2>
+        <p class="lead">Fill out the form below and we'll get back to you within 30 minutes during business hours.</p>
+      </div>
+
+      <div class="home-form-wrap">
+        <form action="#" method="POST" id="homeContactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="home-firstName">First Name *</label>
+              <input type="text" id="home-firstName" name="firstName" class="form-control" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="home-lastName">Last Name *</label>
+              <input type="text" id="home-lastName" name="lastName" class="form-control" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="home-phone">Phone Number *</label>
+              <input type="tel" id="home-phone" name="phone" class="form-control" placeholder="(314) 555-0123" required>
+            </div>
+            <div class="form-group">
+              <label for="home-email">Email *</label>
+              <input type="email" id="home-email" name="email" class="form-control" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="home-service">Service Needed *</label>
+              <select id="home-service" name="service" class="form-control" required>
+                <option value="">Select a service…</option>
+                <option value="air-duct-cleaning">Air Duct Cleaning</option>
+                <option value="dryer-vent-cleaning">Dryer Vent Cleaning</option>
+                <option value="air-duct-maintenance">Air Duct Maintenance</option>
+                <option value="air-duct-installation">Air Duct Installation</option>
+                <option value="air-duct-repair">Air Duct Repair</option>
+                <option value="commercial">Commercial Service</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="home-zip">ZIP Code *</label>
+              <input type="text" id="home-zip" name="zip" class="form-control" placeholder="63118" pattern="[0-9]{5}" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="home-message">Tell Us About Your Project</label>
+            <textarea id="home-message" name="message" class="form-control" rows="4" placeholder="What brings you to us? Any specific concerns? (e.g., 'Recently moved in,' 'Allergies,' 'Dryer not drying well')"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-large">Send My Free Estimate Request</button>
+          <p class="form-note">🔒 Your information is safe with us. We never share or sell your data. By submitting, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- Final CTA -->
   <section class="cta-section">
     <div class="container">
       <h2>Ready for Cleaner Air?</h2>
       <p>Get your free, no-obligation estimate today. Most appointments scheduled within 24 hours. Open 7 days a week, 8 AM – 9 PM.</p>
       <div class="cta-buttons">
-        <a href="contact.html" class="btn btn-primary btn-large">Get Free Estimate</a>
+        <a href="#contact-form" class="btn btn-primary btn-large">Get Free Estimate</a>
         <a href="tel:+13147183632" class="btn btn-light btn-large">📞 Call (314) 718-3632</a>
       </div>
     </div>

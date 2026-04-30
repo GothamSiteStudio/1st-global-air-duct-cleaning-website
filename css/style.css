@@ -426,11 +426,34 @@ section {
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-3xl);
   align-items: center;
   position: relative;
   z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-usps {
+  text-align: left;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta {
+  justify-content: center;
+}
+
+.hero-trust {
+  justify-content: center;
 }
 
 .hero-text h1 {
@@ -1925,12 +1948,18 @@ textarea.form-control {
   color: var(--color-primary);
 }
 
-.contact-form-wrap {
+.contact-form-wrap,
+.home-form-wrap {
   background: white;
   padding: var(--space-2xl);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-md);
+}
+
+.home-form-wrap {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* ---------- Hours Table ---------- */
@@ -2100,7 +2129,8 @@ textarea.form-control {
 
   .hero-form-card,
   .contact-info,
-  .contact-form-wrap {
+  .contact-form-wrap,
+  .home-form-wrap {
     padding: var(--space-lg);
   }
 }
