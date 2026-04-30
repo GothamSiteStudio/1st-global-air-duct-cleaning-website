@@ -206,6 +206,72 @@
     });
   });
 
+  // ---------- Before/After Image Sliders ----------
+  const sliders = document.querySelectorAll('.ba-slider');
+
+  sliders.forEach(slider => {
+    let isDragging = false;
+
+    function setPos(clientX) {
+      const rect = slider.getBoundingClientRect();
+      let percentage = ((clientX - rect.left) / rect.width) * 100;
+      percentage = Math.max(0, Math.min(100, percentage));
+      slider.style.setProperty('--pos', percentage + '%');
+    }
+
+    function onPointerDown(e) {
+      isDragging = true;
+      const x = e.touches ? e.touches[0].clientX : e.clientX;
+      setPos(x);
+      e.preventDefault();
+    }
+
+    function onPointerMove(e) {
+      if (!isDragging) return;
+      const x = e.touches ? e.touches[0].clientX : e.clientX;
+      setPos(x);
+    }
+
+    function onPointerUp() {
+      isDragging = false;
+    }
+
+    // Mouse events
+    slider.addEventListener('mousedown', onPointerDown);
+    document.addEventListener('mousemove', onPointerMove);
+    document.addEventListener('mouseup', onPointerUp);
+
+    // Touch events
+    slider.addEventListener('touchstart', onPointerDown, { passive: false });
+    document.addEventListener('touchmove', onPointerMove, { passive: true });
+    document.addEventListener('touchend', onPointerUp);
+
+    // Click to set position
+    slider.addEventListener('click', e => {
+      if (!isDragging) setPos(e.clientX);
+    });
+
+    // Keyboard support for accessibility
+    slider.setAttribute('tabindex', '0');
+    slider.setAttribute('role', 'slider');
+    slider.setAttribute('aria-label', 'Drag to compare before and after images');
+    slider.setAttribute('aria-valuemin', '0');
+    slider.setAttribute('aria-valuemax', '100');
+    slider.setAttribute('aria-valuenow', '50');
+
+    slider.addEventListener('keydown', e => {
+      const currentPos = parseFloat(slider.style.getPropertyValue('--pos')) || 50;
+      let newPos = currentPos;
+      if (e.key === 'ArrowLeft') newPos = Math.max(0, currentPos - 5);
+      if (e.key === 'ArrowRight') newPos = Math.min(100, currentPos + 5);
+      if (newPos !== currentPos) {
+        slider.style.setProperty('--pos', newPos + '%');
+        slider.setAttribute('aria-valuenow', Math.round(newPos));
+        e.preventDefault();
+      }
+    });
+  });
+
   // ---------- Sticky header shrink on scroll ----------
   const header = document.querySelector('.header');
   let lastScroll = 0;

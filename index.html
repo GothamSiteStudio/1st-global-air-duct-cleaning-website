@@ -163,6 +163,7 @@
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="service-areas.html">Service Areas</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -374,14 +375,8 @@
       </div>
 
       <div class="work-showcase">
-        <div class="work-video-wrap">
-          <video controls preload="metadata" poster="images/video-poster.webp" muted playsinline>
-            <source src="images/work.mov" type="video/quicktime">
-            <source src="images/work.mov" type="video/mp4">
-            Your browser doesn't support video. <a href="images/work.mov">Download the video</a>.
-          </video>
-        </div>
-        <div class="work-images-stack">
+        <!-- 2 images side-by-side -->
+        <div class="work-images-row">
           <div class="work-image-item">
             <img src="images/hero-tech-working.jpg" alt="1st Global technician at work in a St. Louis home" loading="lazy">
           </div>
@@ -389,6 +384,70 @@
             <img src="images/duct-cleaner.webp" alt="Professional air duct cleaning equipment in action" loading="lazy">
           </div>
         </div>
+
+        <!-- Video below, full width -->
+        <div class="work-video-wrap">
+          <video controls preload="metadata" poster="images/video-poster.webp" muted playsinline>
+            <source src="images/work.mov" type="video/quicktime">
+            <source src="images/work.mov" type="video/mp4">
+            Your browser doesn't support video. <a href="images/work.mov">Download the video</a>.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before/After Comparison Sliders -->
+  <section class="bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Before &amp; After</span>
+        <h2>See the Difference for Yourself</h2>
+        <p class="lead">Drag the slider on each image to see the dramatic before-and-after results from real St. Louis homes.</p>
+      </div>
+
+      <div class="ba-sliders-grid-3col">
+
+        <div class="ba-slider" data-pos="50">
+          <img class="ba-img ba-img-after" src="images/gallery/img-002.webp" alt="After cleaning - clean air ducts" loading="lazy">
+          <img class="ba-img ba-img-before" src="images/gallery/img-001.webp" alt="Before cleaning - dirty air ducts" loading="lazy">
+          <div class="ba-handle">
+            <div class="ba-handle-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6" style="opacity:0.5"/></svg>
+            </div>
+          </div>
+          <span class="ba-label ba-label-before">Before</span>
+          <span class="ba-label ba-label-after">After</span>
+        </div>
+
+        <div class="ba-slider" data-pos="50">
+          <img class="ba-img ba-img-after" src="images/gallery/img-010.jpg" alt="After cleaning" loading="lazy">
+          <img class="ba-img ba-img-before" src="images/gallery/img-009.jpg" alt="Before cleaning" loading="lazy">
+          <div class="ba-handle">
+            <div class="ba-handle-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6" style="opacity:0.5"/></svg>
+            </div>
+          </div>
+          <span class="ba-label ba-label-before">Before</span>
+          <span class="ba-label ba-label-after">After</span>
+        </div>
+
+        <div class="ba-slider" data-pos="50">
+          <img class="ba-img ba-img-after" src="images/gallery/img-014.jpg" alt="After cleaning" loading="lazy">
+          <img class="ba-img ba-img-before" src="images/gallery/img-013.jpg" alt="Before cleaning" loading="lazy">
+          <div class="ba-handle">
+            <div class="ba-handle-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6" style="opacity:0.5"/></svg>
+            </div>
+          </div>
+          <span class="ba-label ba-label-before">Before</span>
+          <span class="ba-label ba-label-after">After</span>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-xl">
+        <a href="gallery.html" class="btn btn-primary btn-large">View Full Before &amp; After Gallery →</a>
       </div>
     </div>
   </section>
