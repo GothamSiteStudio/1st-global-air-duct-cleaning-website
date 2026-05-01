@@ -1,6 +1,6 @@
-# 1st Global Air Duct Cleaning — Website
+# 1st Global Air Duct Cleaning Website
 
-Marketing website for **1st Global Air Duct Cleaning** — a family-owned air duct and dryer vent cleaning service serving Greater St. Louis since 2014.
+Marketing website for **1st Global Air Duct Cleaning** a family-owned air duct and dryer vent cleaning service serving Greater St. Louis since 2014.
 
 🌐 **Live site:** [1stglobalairductcleaning.com](https://1stglobalairductcleaning.com/)
 📞 **Phone:** (314) 718-3632
@@ -13,12 +13,12 @@ Marketing website for **1st Global Air Duct Cleaning** — a family-owned air du
 A modern, SEO-optimized static website built to help St. Louis homeowners and businesses find and contact 1st Global for professional air duct cleaning services. The site is designed mobile-first, fully responsive, and optimized for local search.
 
 ### Pages
-- **Home** (`index.html`) — Hero, services overview, why-choose-us, FAQ, CTA
-- **Services** (`services.html`) — Six detailed service descriptions
-- **Service Areas** (`service-areas.html`) — 30+ cities across Missouri & Illinois
-- **About** (`about.html`) — Company story, values, recognition
-- **Contact** (`contact.html`) — Estimate form, hours, location
-- **Privacy Policy** (`privacy.html`) — CCPA-compliant privacy policy
+- **Home** (`index.html`) Hero, services overview, why-choose-us, FAQ, CTA
+- **Services** (`services.html`) Six detailed service descriptions
+- **Service Areas** (`service-areas.html`) 30+ cities across Missouri & Illinois
+- **About** (`about.html`) Company story, values, recognition
+- **Contact** (`contact.html`) Estimate form, hours, location
+- **Privacy Policy** (`privacy.html`) CCPA-compliant privacy policy
 
 ### Service Coverage
 **Missouri (22 cities):** St. Louis, Chesterfield, St. Charles, O'Fallon, St. Peters, Wentzville, Arnold, Wildwood, Ballwin, Manchester, Ellisville, Kirkwood, Webster Groves, Ladue, Des Peres, Town and Country, Clayton, Creve Coeur, Maryland Heights, University City, Florissant, Hazelwood
@@ -29,12 +29,12 @@ A modern, SEO-optimized static website built to help St. Louis homeowners and bu
 
 ## Tech Stack
 
-- **HTML5** — Semantic markup with accessibility in mind
-- **CSS3** — Custom properties, mobile-first responsive design
-- **Vanilla JavaScript** — Lightweight, no dependencies
-- **Google Fonts** — Poppins (headings) + Inter (body)
-- **Schema.org** — LocalBusiness, FAQPage, Service, ContactPage, AboutPage markup
-- **Open Graph + Twitter Cards** — Social sharing optimization
+- **HTML5** Semantic markup with accessibility in mind
+- **CSS3** Custom properties, mobile-first responsive design
+- **Vanilla JavaScript** Lightweight, no dependencies
+- **Google Fonts** Poppins (headings) + Inter (body)
+- **Schema.org** LocalBusiness, FAQPage, Service, ContactPage, AboutPage markup
+- **Open Graph + Twitter Cards** Social sharing optimization
 
 No build step required. Static files only.
 
@@ -44,18 +44,18 @@ No build step required. Static files only.
 
 ```
 .
-├── index.html              # Home page
-├── about.html              # About us
-├── services.html           # Services overview
-├── service-areas.html      # All 30+ service cities
-├── contact.html            # Contact form + info
-├── privacy.html            # Privacy Policy
+├── index.html # Home page
+├── about.html # About us
+├── services.html # Services overview
+├── service-areas.html # All 30+ service cities
+├── contact.html # Contact form + info
+├── privacy.html # Privacy Policy
 ├── css/
-│   └── style.css           # Main stylesheet
+│ └── style.css # Main stylesheet
 ├── js/
-│   └── main.js             # Mobile menu, FAQ, form validation
+│ └── main.js # Mobile menu, FAQ, form validation
 └── images/
-    └── logo.png            # Company logo
+    └── logo.png # Company logo
 ```
 
 ---
@@ -78,7 +78,7 @@ No build step required. Static files only.
 
 ## Local Development
 
-This is a pure static site — no build tools or dependencies required.
+This is a pure static site no build tools or dependencies required.
 
 ### View locally
 Just open `index.html` in your browser, or serve via any static server:

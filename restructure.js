@@ -1,6 +1,6 @@
 // Restructures URLs to:
-//   /services/[slug]/index.html  (was /[slug].html)
-//   /service-areas/[slug]/index.html  (was /[slug].html)
+// /services/[slug]/index.html (was /[slug].html)
+// /service-areas/[slug]/index.html (was /[slug].html)
 // Creates redirect stubs at old paths.
 // Updates all internal links across the entire site.
 
@@ -56,7 +56,7 @@ function rewriteForDepth2(content) {
     const re = new RegExp(`href="${s}\\.html"`, 'g');
     content = content.replace(re, `href="../../service-areas/${s}/"`);
   });
-  // Logo image inside header — already covered by src="images/"→"../../images/" replacement
+  // Logo image inside header already covered by src="images/"→"../../images/" replacement
   return content;
 }
 

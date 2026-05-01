@@ -49,7 +49,7 @@ pagesToUpdate.forEach((page) => {
     );
   }
 
-  // Update footer Quick Links — add Reviews, FAQ, Blog if not already present
+  // Update footer Quick Links add Reviews, FAQ, Blog if not already present
   // Pattern: between <a href="service-areas.html">Service Areas</a> and <a href="contact.html">Contact</a>
   const footerPattern = /<a href="service-areas\.html">Service Areas<\/a>\s*\n(\s*)<a href="contact\.html">Contact<\/a>/;
   if (footerPattern.test(content)) {

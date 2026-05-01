@@ -12,10 +12,10 @@ const cities = [
     state: 'MO',
     stateFull: 'Missouri',
     population: '300,000+',
-    intro: 'Our home base. We\'ve served homes and businesses across all of St. Louis City for over a decade — from the Central West End to South City to North County. With diverse housing stock ranging from historic brick homes to modern apartments, we\'ve cleaned just about every duct configuration imaginable.',
+    intro: 'Our home base. We\'ve served homes and businesses across all of St. Louis City for over a decade from the Central West End to South City to North County. With diverse housing stock ranging from historic brick homes to modern apartments, we\'ve cleaned just about every duct configuration imaginable.',
     paragraphs: [
-      'St. Louis is where we started in 2014, and it\'s where we still do most of our work. The city\'s mix of century-old brick homes, mid-century bungalows, modern condos, and converted industrial lofts gives us experience with HVAC systems of every age and configuration. That experience matters — every duct system is different, and there is no substitute for having seen them all.',
-      'St. Louis weather is also uniquely hard on indoor air. Summer humidity grows mold and biofilm inside the ducts. Winter heating dries out the air and lifts dust. Spring and fall send clouds of pollen straight through return registers. Most homes in St. Louis benefit from cleaning every 3 to 5 years — sometimes sooner for older brick homes near downtown where decades of city dust have built up.',
+      'St. Louis is where we started in 2014, and it\'s where we still do most of our work. The city\'s mix of century-old brick homes, mid-century bungalows, modern condos, and converted industrial lofts gives us experience with HVAC systems of every age and configuration. That experience matters every duct system is different, and there is no substitute for having seen them all.',
+      'St. Louis weather is also uniquely hard on indoor air. Summer humidity grows mold and biofilm inside the ducts. Winter heating dries out the air and lifts dust. Spring and fall send clouds of pollen straight through return registers. Most homes in St. Louis benefit from cleaning every 3 to 5 years sometimes sooner for older brick homes near downtown where decades of city dust have built up.',
       'We work in every St. Louis neighborhood: Central West End, Lafayette Square, Tower Grove, The Hill, Soulard, Carondelet, Dogtown, Forest Park area, Skinker-DeBaliviere, and all the way out to the city limits. Whether you\'re in a 1900 four-square or a downtown condo, we have the equipment and experience for the job.',
     ],
     neighborhoods: ['Central West End', 'Lafayette Square', 'Tower Grove', 'The Hill', 'Soulard', 'Carondelet', 'Dogtown'],
@@ -26,7 +26,7 @@ const cities = [
       { slug: 'kirkwood-mo', name: 'Kirkwood, MO' },
       { slug: 'maryland-heights-mo', name: 'Maryland Heights, MO' },
     ],
-    drivetime: '0 minutes — this is our home market.',
+    drivetime: '0 minutes this is our home market.',
     zip: '63118',
   },
   {
@@ -37,8 +37,8 @@ const cities = [
     population: '47,000',
     intro: 'One of our top-served suburbs. Chesterfield\'s larger homes (often 3,000+ sq ft) and family-focused neighborhoods make professional duct cleaning especially valuable. We work throughout Chesterfield Valley, the Wildhorse Creek area, and across the city.',
     paragraphs: [
-      'Chesterfield is one of our biggest service markets outside St. Louis City. The city\'s family-friendly neighborhoods, larger lot sizes, and wealth of new and renovated homes mean a lot of HVAC systems running long hours through humid summers and dry winters. Most Chesterfield homes we serve are 3,000 to 5,000 square feet with multiple HVAC systems — which means more ductwork to clean and bigger benefits when it\'s done right.',
-      'A lot of the homes in Chesterfield Valley and the Wildhorse Creek area are 15 to 25 years old now — the age where original duct systems start showing real buildup. If your home was built in the late 1990s or 2000s and you\'ve never had professional cleaning, you\'re overdue. We\'ve seen what comes out of those ducts, and most homeowners are shocked.',
+      'Chesterfield is one of our biggest service markets outside St. Louis City. The city\'s family-friendly neighborhoods, larger lot sizes, and wealth of new and renovated homes mean a lot of HVAC systems running long hours through humid summers and dry winters. Most Chesterfield homes we serve are 3,000 to 5,000 square feet with multiple HVAC systems which means more ductwork to clean and bigger benefits when it\'s done right.',
+      'A lot of the homes in Chesterfield Valley and the Wildhorse Creek area are 15 to 25 years old now the age where original duct systems start showing real buildup. If your home was built in the late 1990s or 2000s and you\'ve never had professional cleaning, you\'re overdue. We\'ve seen what comes out of those ducts, and most homeowners are shocked.',
       'We schedule throughout Chesterfield several days a week. Same-day service is often available, and same-week is almost always doable. Call us in the morning and we\'ll let you know if we can fit you in before dinner.',
     ],
     neighborhoods: ['Chesterfield Valley', 'Wildhorse Creek', 'Olive Boulevard corridor', 'Schoettler', 'Kehrs Mill'],
@@ -58,10 +58,10 @@ const cities = [
     state: 'MO',
     stateFull: 'Missouri',
     population: '8,500',
-    intro: 'One of the most affluent communities in the region. Ladue homeowners expect premium service — and we deliver it with the same family-owned care we give every customer.',
+    intro: 'One of the most affluent communities in the region. Ladue homeowners expect premium service and we deliver it with the same family-owned care we give every customer.',
     paragraphs: [
-      'Ladue is one of the most desirable addresses in the St. Louis region, with large estate homes set on mature wooded lots. These homes often have multi-zone HVAC systems, complex duct layouts, and decades of dust history — exactly the type of work we specialize in. Many Ladue homes also have 100+ year-old ductwork that\'s been added to over time, with both original galvanized and modern flex sections that need different cleaning approaches.',
-      'Ladue homeowners expect a high standard of service: clean uniforms, booties on hardwood floors, careful protection of antiques and art, and a final walkthrough before we leave. That standard is exactly how we run every job — but it\'s especially important in the homes we clean here.',
+      'Ladue is one of the most desirable addresses in the St. Louis region, with large estate homes set on mature wooded lots. These homes often have multi-zone HVAC systems, complex duct layouts, and decades of dust history exactly the type of work we specialize in. Many Ladue homes also have 100+ year-old ductwork that\'s been added to over time, with both original galvanized and modern flex sections that need different cleaning approaches.',
+      'Ladue homeowners expect a high standard of service: clean uniforms, booties on hardwood floors, careful protection of antiques and art, and a final walkthrough before we leave. That standard is exactly how we run every job but it\'s especially important in the homes we clean here.',
       'We\'ve cleaned ducts in homes throughout Ladue for over a decade. From the older estates near Forest Park to the newer construction along Ladue Road, we know the housing stock and the systems inside.',
     ],
     neighborhoods: ['South Ladue', 'North Ladue', 'Old Warson Road area', 'Litzsinger area'],
@@ -81,11 +81,11 @@ const cities = [
     state: 'MO',
     stateFull: 'Missouri',
     population: '28,000',
-    intro: 'One of the most charming suburbs in St. Louis with a lot of historic homes. Older homes mean older HVAC systems — and a real need for professional duct attention.',
+    intro: 'One of the most charming suburbs in St. Louis with a lot of historic homes. Older homes mean older HVAC systems and a real need for professional duct attention.',
     paragraphs: [
       'Kirkwood\'s historic charm comes with a duct cleaning challenge: a lot of these homes are 80 to 120 years old, and many have HVAC systems that were retrofitted into spaces that weren\'t originally designed for them. Old plaster walls, narrow basements, and creative duct routing mean Kirkwood homes often have buildup in places that haven\'t been touched since the system was installed.',
-      'We love working in Kirkwood because every home tells a story. The Victorian houses near downtown, the mid-century ranches, the renovated farmhouses on the edges of town — each one has different ductwork and different needs. Most Kirkwood homes we clean haven\'t had professional service in 5+ years, and the difference after a thorough cleaning is dramatic.',
-      'If your Kirkwood home has any combination of old ductwork, pets, mature trees that drop pollen and seed, or family members with allergies — duct cleaning is one of the highest-impact home maintenance items you can do. Call for a free phone quote today.',
+      'We love working in Kirkwood because every home tells a story. The Victorian houses near downtown, the mid-century ranches, the renovated farmhouses on the edges of town each one has different ductwork and different needs. Most Kirkwood homes we clean haven\'t had professional service in 5+ years, and the difference after a thorough cleaning is dramatic.',
+      'If your Kirkwood home has any combination of old ductwork, pets, mature trees that drop pollen and seed, or family members with allergies duct cleaning is one of the highest-impact home maintenance items you can do. Call for a free phone quote today.',
     ],
     neighborhoods: ['Downtown Kirkwood', 'Greentree area', 'Manchester Road corridor', 'Big Bend area'],
     nearbyCities: [
@@ -106,9 +106,9 @@ const cities = [
     population: '24,000',
     intro: 'Historic neighborhoods with mature housing stock dating back decades. We help Webster Groves homeowners maintain healthy indoor air in older homes.',
     paragraphs: [
-      'Webster Groves is one of the most established suburbs in the St. Louis region, with a deep stock of homes built between 1910 and 1960. These homes are full of character — original hardwoods, plaster walls, transom windows — and ductwork that\'s been in place for decades. Without professional cleaning every few years, that ductwork becomes a museum of every dust event in the home\'s history.',
+      'Webster Groves is one of the most established suburbs in the St. Louis region, with a deep stock of homes built between 1910 and 1960. These homes are full of character original hardwoods, plaster walls, transom windows and ductwork that\'s been in place for decades. Without professional cleaning every few years, that ductwork becomes a museum of every dust event in the home\'s history.',
       'Many of our Webster Groves customers come to us after a renovation, after moving in, or after years of putting it off. The before-and-after is usually striking. Original galvanized supply trunks that have never been cleaned can hold 10+ pounds of dust, pet hair, and construction debris from past projects.',
-      'We work all over Webster Groves — Old Webster, the area around Webster University, the streets near Old Orchard, and out toward Big Bend. Whether your home is a 1920s bungalow or a renovated mid-century, we\'ll handle the ductwork with the care old homes deserve.',
+      'We work all over Webster Groves Old Webster, the area around Webster University, the streets near Old Orchard, and out toward Big Bend. Whether your home is a 1920s bungalow or a renovated mid-century, we\'ll handle the ductwork with the care old homes deserve.',
     ],
     neighborhoods: ['Old Webster', 'Webster Park', 'Old Orchard', 'Big Bend area'],
     nearbyCities: [
@@ -129,9 +129,9 @@ const cities = [
     population: '90,000',
     intro: 'The largest suburb in St. Charles County and one of our biggest service markets. O\'Fallon\'s mix of established and new neighborhoods means a wide range of HVAC systems and duct cleaning needs.',
     paragraphs: [
-      'O\'Fallon, MO is the biggest underserved suburb in our service area — and one of the cities where we see the most duct cleaning demand. The mix of newer subdivisions built in the 2000s and 2010s combined with older homes near the downtown core means almost every duct cleaning scenario is represented here.',
+      'O\'Fallon, MO is the biggest underserved suburb in our service area and one of the cities where we see the most duct cleaning demand. The mix of newer subdivisions built in the 2000s and 2010s combined with older homes near the downtown core means almost every duct cleaning scenario is represented here.',
       'New construction homes in O\'Fallon often need cleaning sooner than you\'d expect. Construction dust, drywall powder, and sawdust settle into the duct system during the build and never leave until someone professionally extracts it. We get a lot of calls from O\'Fallon homeowners 2 to 5 years into a new home, when they realize the dust around the registers isn\'t getting better on its own.',
-      'We make trips to O\'Fallon several days a week. Whether you\'re in WingHaven, T.R. Hughes Park area, or one of the older neighborhoods east of Highway K, we can usually be there within a day or two. Same-day service is often available — call us early in the morning for the best chance.',
+      'We make trips to O\'Fallon several days a week. Whether you\'re in WingHaven, T.R. Hughes Park area, or one of the older neighborhoods east of Highway K, we can usually be there within a day or two. Same-day service is often available call us early in the morning for the best chance.',
     ],
     neighborhoods: ['WingHaven', 'T.R. Hughes Park area', 'Highway K corridor', 'Downtown O\'Fallon'],
     nearbyCities: [
@@ -150,9 +150,9 @@ const cities = [
     state: 'MO',
     stateFull: 'Missouri',
     population: '70,000',
-    intro: 'Historic downtown St. Charles to the newer Mid Rivers area — we serve the entire city. With St. Charles County\'s continued growth, we see everything from older brick homes near the river to modern subdivisions.',
+    intro: 'Historic downtown St. Charles to the newer Mid Rivers area we serve the entire city. With St. Charles County\'s continued growth, we see everything from older brick homes near the river to modern subdivisions.',
     paragraphs: [
-      'St. Charles is a city of contrasts: 200-year-old brick homes near Main Street and the riverfront, and brand-new subdivisions out toward the Mid Rivers area. We work in both — and the cleaning approach differs. Historic homes near downtown often have decades of accumulated dust in their ductwork (or no ductwork at all in original sections, with HVAC retrofitted into mostly inaccessible chases). Newer homes have construction dust and the standard residential layouts.',
+      'St. Charles is a city of contrasts: 200-year-old brick homes near Main Street and the riverfront, and brand-new subdivisions out toward the Mid Rivers area. We work in both and the cleaning approach differs. Historic homes near downtown often have decades of accumulated dust in their ductwork (or no ductwork at all in original sections, with HVAC retrofitted into mostly inaccessible chases). Newer homes have construction dust and the standard residential layouts.',
       'St. Charles County\'s humidity and seasonal temperature swings make duct cleaning especially valuable. Our summers run hot and humid, and the AC runs nearly nonstop from May through September. Anything in those ducts gets cycled through every room of the home, every day, for months. A clean system means a cleaner home and a more comfortable summer.',
       'We work in St. Charles regularly. From the historic downtown to Mid Rivers Mall area to the newer Highway 94 corridor, we know the city well. Most jobs scheduled within 1-2 days of the call.',
     ],
@@ -175,7 +175,7 @@ const cities = [
     population: '60,000',
     intro: 'Family-oriented community with strong demand for indoor air quality services. We\'re throughout St. Peters several days a week serving residential customers.',
     paragraphs: [
-      'St. Peters is a family-heavy market for duct cleaning. The city\'s neighborhoods are full of homes built in the 1990s through 2010s — the years where central HVAC became standard, but where most homeowners haven\'t yet had a first professional cleaning. That makes St. Peters one of the highest-impact markets for us, because the buildup tends to be substantial and the result of a single cleaning is dramatic.',
+      'St. Peters is a family-heavy market for duct cleaning. The city\'s neighborhoods are full of homes built in the 1990s through 2010s the years where central HVAC became standard, but where most homeowners haven\'t yet had a first professional cleaning. That makes St. Peters one of the highest-impact markets for us, because the buildup tends to be substantial and the result of a single cleaning is dramatic.',
       'Pets, kids, and busy households mean lots of dust circulating through the system. Combined with summer humidity and pollen from the rolling tree-lined neighborhoods around Mid Rivers and Spencer Road, a typical St. Peters home benefits from cleaning every 3-5 years. We\'ve cleaned hundreds of homes here, and we\'re happy to come out and walk through your specific situation.',
       'We schedule throughout St. Peters multiple days a week. Same-day appointments often available when you call before 2 PM.',
     ],
@@ -198,7 +198,7 @@ const cities = [
     population: '52,000',
     intro: 'Largest city in North St. Louis County. We serve a wide range of homes throughout Florissant, from established neighborhoods to newer developments.',
     paragraphs: [
-      'Florissant is one of North County\'s largest cities, with a deep mix of mid-century homes, brick ranches from the 1960s and 70s, and newer construction along the city\'s northern edges. Many of these homes have HVAC systems that have been working hard for 30 to 40 years — and most have never had a professional duct cleaning.',
+      'Florissant is one of North County\'s largest cities, with a deep mix of mid-century homes, brick ranches from the 1960s and 70s, and newer construction along the city\'s northern edges. Many of these homes have HVAC systems that have been working hard for 30 to 40 years and most have never had a professional duct cleaning.',
       'Brick ranches built in the 60s and 70s in particular tend to have galvanized duct trunks with smaller branch lines that get clogged easily over decades. We see a lot of homes in Florissant where the airflow has slowly degraded over years, and the homeowner doesn\'t realize how much the system has been struggling until after we clean it. The before-and-after is often dramatic.',
       'We work all over Florissant. From the older neighborhoods near the city center to the newer developments along North Lindbergh, we cover the whole city. Most appointments within 1-2 days, same-day service often available.',
     ],
@@ -221,8 +221,8 @@ const cities = [
     population: '16,000',
     intro: 'Upscale residential neighborhoods in the heart of St. Louis County. We serve homes throughout Clayton with the same family-owned attention every customer gets.',
     paragraphs: [
-      'Clayton is the business heart of St. Louis County and home to some of the most beautiful residential streets in the region. The city\'s housing stock — from historic brick estates to modern condos — represents the full range of duct cleaning challenges, and we have the experience to handle all of them.',
-      'Many Clayton homes are 80 to 100 years old, with original ductwork or systems retrofitted into older homes during 1980s and 90s renovations. Both scenarios mean buildup that hasn\'t been addressed in decades. Add in mature trees, urban dust, and busy households — and most Clayton homes we serve see a meaningful improvement after a thorough cleaning.',
+      'Clayton is the business heart of St. Louis County and home to some of the most beautiful residential streets in the region. The city\'s housing stock from historic brick estates to modern condos represents the full range of duct cleaning challenges, and we have the experience to handle all of them.',
+      'Many Clayton homes are 80 to 100 years old, with original ductwork or systems retrofitted into older homes during 1980s and 90s renovations. Both scenarios mean buildup that hasn\'t been addressed in decades. Add in mature trees, urban dust, and busy households and most Clayton homes we serve see a meaningful improvement after a thorough cleaning.',
       'We also serve Clayton offices and small commercial buildings. After-hours service is standard, with no extra charge for evenings or weekends. Call for a free walk-through and written estimate.',
     ],
     neighborhoods: ['Wydown', 'Oak Knoll', 'Hi-Pointe area', 'Forest Park area'],
@@ -244,7 +244,7 @@ const cities = [
     population: '11,000',
     intro: 'Among the most affluent communities in Missouri, with large estate homes that often require complex multi-zone HVAC cleaning.',
     paragraphs: [
-      'Town and Country is one of Missouri\'s wealthiest communities, with estate-sized lots and homes that frequently top 5,000 to 10,000+ square feet. These homes typically have two or three zoned HVAC systems, complex duct layouts, and elaborate finish work that makes professional cleaning especially valuable — and especially in need of careful technicians.',
+      'Town and Country is one of Missouri\'s wealthiest communities, with estate-sized lots and homes that frequently top 5,000 to 10,000+ square feet. These homes typically have two or three zoned HVAC systems, complex duct layouts, and elaborate finish work that makes professional cleaning especially valuable and especially in need of careful technicians.',
       'Multi-zone systems mean more ductwork, more registers, and more places for dust to collect. A typical Town and Country home cleaning is a half-day to a full-day job, and we always send experienced techs with the right equipment for larger systems. We protect floors, work quietly, and respect the homes we\'re in.',
       'We work throughout Town and Country regularly. Same-week scheduling is standard, with same-day often possible. Call us with your home\'s approximate square footage and number of HVAC zones, and we can give you a quote on the spot.',
     ],
@@ -268,7 +268,7 @@ const cities = [
     intro: 'Affluent IL suburb home to SIUE. Residential customers and university-related properties make Edwardsville a regular destination for our team.',
     paragraphs: [
       'Edwardsville is one of the wealthier and faster-growing cities in the Illinois Metro East. The presence of Southern Illinois University Edwardsville (SIUE) brings a steady stream of professionals, faculty, and families to the area, with new construction and established neighborhoods in roughly equal measure.',
-      'Newer Edwardsville subdivisions tend to need cleaning sooner than homeowners expect — construction dust settles into duct systems during builds and never leaves on its own. Older homes near downtown Edwardsville and along Main Street often have decades of accumulated buildup that we extract with our HEPA-vacuum equipment.',
+      'Newer Edwardsville subdivisions tend to need cleaning sooner than homeowners expect construction dust settles into duct systems during builds and never leaves on its own. Older homes near downtown Edwardsville and along Main Street often have decades of accumulated buildup that we extract with our HEPA-vacuum equipment.',
       'We make regular trips to Edwardsville and the broader Metro East. Crossing the river adds a bit of drive time, but we\'ve been doing it weekly for years. Same-day service is sometimes available; same-week is almost always doable.',
     ],
     neighborhoods: ['Downtown Edwardsville', 'SIUE area', 'Goshen Road corridor', 'Fruit Road area'],
@@ -288,10 +288,10 @@ const cities = [
     state: 'IL',
     stateFull: 'Illinois',
     population: '42,000',
-    intro: 'Largest city in the Illinois Metro East and one of our biggest IL markets. Mix of historic and newer homes — all benefit from professional duct cleaning.',
+    intro: 'Largest city in the Illinois Metro East and one of our biggest IL markets. Mix of historic and newer homes all benefit from professional duct cleaning.',
     paragraphs: [
-      'Belleville is the largest city in the Illinois Metro East and one of our biggest markets across the river. The city has a deep mix of housing — historic homes near downtown that go back to the 1800s, mid-century neighborhoods along Main Street, and newer subdivisions on the city\'s growing edges. We work in all of them.',
-      'Belleville\'s older homes often have hot-water radiators rather than forced-air, but most modern Belleville homes do have central HVAC and ductwork — and that ductwork tends to be in need of attention. We\'ve cleaned ducts in Belleville homes that hadn\'t been touched in 30 years, and the difference is striking.',
+      'Belleville is the largest city in the Illinois Metro East and one of our biggest markets across the river. The city has a deep mix of housing historic homes near downtown that go back to the 1800s, mid-century neighborhoods along Main Street, and newer subdivisions on the city\'s growing edges. We work in all of them.',
+      'Belleville\'s older homes often have hot-water radiators rather than forced-air, but most modern Belleville homes do have central HVAC and ductwork and that ductwork tends to be in need of attention. We\'ve cleaned ducts in Belleville homes that hadn\'t been touched in 30 years, and the difference is striking.',
       'We make Belleville trips weekly. Same-week scheduling is the norm. Call for a free phone quote.',
     ],
     neighborhoods: ['West End', 'Downtown Belleville', 'Belt East', 'Frank Scott Parkway area'],
@@ -314,7 +314,7 @@ const cities = [
     intro: 'Mature suburb with established residential neighborhoods. A great area for homeowners who want professional air duct cleaning.',
     paragraphs: [
       'Creve Coeur is one of West County\'s most established communities, with homes ranging from mid-century ranches to large modern estates along the wooded streets near the lake. Many Creve Coeur homes are 30 to 50 years old now, with HVAC systems that have been working hard through decades of St. Louis weather.',
-      'A common pattern we see in Creve Coeur: homeowners who lived through one or two HVAC replacements but never had the duct system itself professionally cleaned. New equipment moves dirty air through dirty ducts — which means much of the benefit of the new system gets lost. A cleaning paired with a system upgrade gets you the full performance you paid for.',
+      'A common pattern we see in Creve Coeur: homeowners who lived through one or two HVAC replacements but never had the duct system itself professionally cleaned. New equipment moves dirty air through dirty ducts which means much of the benefit of the new system gets lost. A cleaning paired with a system upgrade gets you the full performance you paid for.',
       'We work throughout Creve Coeur regularly. From the area near Olive Boulevard to the wooded neighborhoods near the lake, we cover the whole city. Same-week scheduling is standard.',
     ],
     neighborhoods: ['Olive Boulevard corridor', 'Creve Coeur Lake area', 'Ladue Road area'],
@@ -334,11 +334,11 @@ const cities = [
     state: 'MO',
     stateFull: 'Missouri',
     population: '35,000',
-    intro: 'Larger lots, larger homes, and West County natural beauty. Wildwood homeowners often have higher pollen and outdoor allergen exposure — making clean ducts especially important.',
+    intro: 'Larger lots, larger homes, and West County natural beauty. Wildwood homeowners often have higher pollen and outdoor allergen exposure making clean ducts especially important.',
     paragraphs: [
-      'Wildwood\'s defining feature for our work is the abundance of trees and natural landscape — beautiful, but also one of the highest-pollen environments in West County. Wildwood\'s ductwork sees a lot of pollen, leaf dust, seed fluff, and outdoor allergens cycling through HVAC return systems all spring and fall.',
+      'Wildwood\'s defining feature for our work is the abundance of trees and natural landscape beautiful, but also one of the highest-pollen environments in West County. Wildwood\'s ductwork sees a lot of pollen, leaf dust, seed fluff, and outdoor allergens cycling through HVAC return systems all spring and fall.',
       'For homeowners with allergies or asthma, Wildwood is a duct-cleaning priority. The pollen load in this area is among the highest we see, and removing it from the duct system makes a real difference for the people most affected. We\'ve had multiple Wildwood customers tell us their seasonal allergy symptoms dropped noticeably after a cleaning.',
-      'Wildwood\'s larger homes also mean larger duct systems and longer cleaning times. Plan on a half-day for most jobs. We schedule weekly throughout the city — call for a free phone quote.',
+      'Wildwood\'s larger homes also mean larger duct systems and longer cleaning times. Plan on a half-day for most jobs. We schedule weekly throughout the city call for a free phone quote.',
     ],
     neighborhoods: ['Manchester Road corridor', 'Eatherton Road area', 'Wild Horse Creek area'],
     nearbyCities: [
@@ -472,7 +472,7 @@ const buildPage = (city) => `<!DOCTYPE html>
         <a href="index.html">Home</a><span>/</span><a href="service-areas.html">Service Areas</a><span>/</span><span>${city.name}, ${city.state}</span>
       </div>
       <h1>Air Duct Cleaning in ${city.name}, ${city.state}</h1>
-      <p>Family-owned, locally trusted, and serving ${city.name} homes since 2014. Same-day service often available — call (314) 718-3632.</p>
+      <p>Family-owned, locally trusted, and serving ${city.name} homes since 2014. Same-day service often available call (314) 718-3632.</p>
     </div>
   </div>
 
@@ -502,10 +502,10 @@ const buildPage = (city) => `<!DOCTYPE html>
           </div>
         </div>
 
-${city.paragraphs.map(p => `        <p>${p}</p>`).join('\n\n')}
+${city.paragraphs.map(p => ` <p>${p}</p>`).join('\n\n')}
 
         <h3>Neighborhoods We Serve in ${city.name}</h3>
-        <p>We work throughout ${city.name}, including ${city.neighborhoods.join(', ')} — and everywhere in between. If you're not sure whether we cover your specific neighborhood, just give us a call.</p>
+        <p>We work throughout ${city.name}, including ${city.neighborhoods.join(', ')} and everywhere in between. If you're not sure whether we cover your specific neighborhood, just give us a call.</p>
 
         <h3>Drive Time</h3>
         <p>${city.drivetime} For most calls, we can be at your ${city.name} home within a day or two. Same-day service is often available when you call before 2:00 PM.</p>
@@ -546,7 +546,7 @@ ${city.paragraphs.map(p => `        <p>${p}</p>`).join('\n\n')}
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><polyline points="21 3 21 8 16 8"/></svg>
           </div>
           <h3>HVAC System Cleaning</h3>
-          <p>Beyond ducts — coil, blower, and air handler cleaning for full system efficiency.</p>
+          <p>Beyond ducts coil, blower, and air handler cleaning for full system efficiency.</p>
           <a href="hvac-cleaning.html" class="service-link">Learn More →</a>
         </article>
       </div>
@@ -561,7 +561,7 @@ ${city.paragraphs.map(p => `        <p>${p}</p>`).join('\n\n')}
       </div>
 
       <div class="nearby-cities" style="justify-content: center;">
-${city.nearbyCities.map(nc => `        <a href="${nc.slug}.html">${nc.name}</a>`).join('\n')}
+${city.nearbyCities.map(nc => ` <a href="${nc.slug}.html">${nc.name}</a>`).join('\n')}
         <a href="service-areas.html">View All Service Areas →</a>
       </div>
     </div>
@@ -580,7 +580,7 @@ ${city.nearbyCities.map(nc => `        <a href="${nc.slug}.html">${nc.name}</a>`
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <h3>Locally Owned Since 2014</h3>
-          <p>Family-owned. We treat every ${city.name} home like a neighbor — because it is.</p>
+          <p>Family-owned. We treat every ${city.name} home like a neighbor because it is.</p>
         </div>
 
         <div class="feature">
@@ -613,7 +613,7 @@ ${city.nearbyCities.map(nc => `        <a href="${nc.slug}.html">${nc.name}</a>`
   <section class="cta-section">
     <div class="container">
       <h2>Ready to Schedule Your ${city.name} Cleaning?</h2>
-      <p>Get a free estimate today. Call us or send a message — we respond within 30 minutes during business hours.</p>
+      <p>Get a free estimate today. Call us or send a message we respond within 30 minutes during business hours.</p>
       <div class="cta-buttons">
         <a href="contact.html" class="btn btn-primary btn-large">Get Free Estimate</a>
         <a href="tel:+13147183632" class="btn btn-light btn-large">📞 Call (314) 718-3632</a>

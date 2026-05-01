@@ -29,7 +29,7 @@ files.forEach((fp) => {
   let content = fs.readFileSync(fp, 'utf8');
   const original = content;
 
-  // Pattern 1: nav with FAQ but no Blog after it (depth 2 — uses ../../)
+  // Pattern 1: nav with FAQ but no Blog after it (depth 2 uses ../../)
   // Insert Blog link after FAQ, before About
   const pattern2 = /<li><a href="\.\.\/\.\.\/faq\.html">FAQ<\/a><\/li>\s*\n(\s*)<li><a href="\.\.\/\.\.\/about\.html"/;
   if (pattern2.test(content)) {

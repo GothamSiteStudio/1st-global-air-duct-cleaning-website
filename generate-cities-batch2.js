@@ -29,8 +29,8 @@ const cities = [
     population: '30,000',
     intro: 'Established West County suburb where we have many repeat customers. Ballwin\'s family neighborhoods particularly value our same-day service availability.',
     paragraphs: [
-      'Ballwin is one of West County\'s most established suburbs, with a deep mix of homes from the 1970s through today. Many of the neighborhoods built in the 70s and 80s have HVAC systems that have been replaced once or twice — but the ductwork itself is still original. Cleaning that ductwork is one of the highest-impact maintenance items these homes can have.',
-      'Ballwin homes often have full basements with the air handler in a finished or partially-finished basement room. That accessibility makes our work easier and faster — we can usually clean a Ballwin home in 2-3 hours.',
+      'Ballwin is one of West County\'s most established suburbs, with a deep mix of homes from the 1970s through today. Many of the neighborhoods built in the 70s and 80s have HVAC systems that have been replaced once or twice but the ductwork itself is still original. Cleaning that ductwork is one of the highest-impact maintenance items these homes can have.',
+      'Ballwin homes often have full basements with the air handler in a finished or partially-finished basement room. That accessibility makes our work easier and faster we can usually clean a Ballwin home in 2-3 hours.',
       'We have many repeat customers in Ballwin who book us every 4-5 years on a maintenance schedule. The pattern works: visible dust drops, allergies improve, and the system runs better between cleanings.',
     ],
     neighborhoods: ['Manchester Road corridor', 'Clayton Road area', 'New Ballwin Road area'],
@@ -50,7 +50,7 @@ const cities = [
     population: '18,000',
     intro: 'Right next to Ballwin in West County, with a similar mix of established homes and newer developments along Manchester Road.',
     paragraphs: [
-      'Manchester is a sister city to Ballwin in many ways — similar housing stock, similar demographics, similar HVAC systems. Most Manchester homes are 30-50 years old, with central HVAC that\'s seen decades of dust, pollen, and pet hair.',
+      'Manchester is a sister city to Ballwin in many ways similar housing stock, similar demographics, similar HVAC systems. Most Manchester homes are 30-50 years old, with central HVAC that\'s seen decades of dust, pollen, and pet hair.',
       'The city\'s position along Manchester Road (the busy commercial corridor) means a lot of homes are close to a high-traffic area, which contributes to outdoor dust loads making their way into return registers. Add summer humidity and the typical St. Louis pollen calendar, and Manchester homes benefit significantly from cleaning every few years.',
       'We schedule throughout Manchester regularly. Same-day service often available, same-week is the standard.',
     ],
@@ -72,7 +72,7 @@ const cities = [
     paragraphs: [
       'Ellisville is a smaller West County city with a tight-knit community feel. Most of the housing stock is single-family residential, ranging from mid-century homes to newer subdivisions on the city\'s edges. We\'ve cleaned ducts in homes throughout Ellisville and have built a reputation through word of mouth among neighbors.',
       'A common pattern in Ellisville: one homeowner books us, the neighbors notice the difference (better airflow, less dust around vents), and we end up scheduling 2-3 more cleanings on the same street within a few weeks. We love that.',
-      'Same-week service is standard. Free phone quotes — we\'ll ask about your home and give you an honest answer.',
+      'Same-week service is standard. Free phone quotes we\'ll ask about your home and give you an honest answer.',
     ],
     neighborhoods: ['Clarkson Road corridor', 'Manchester Road area', 'Strecker Road area'],
     nearbyCities: [
@@ -111,7 +111,7 @@ const cities = [
     intro: 'Diverse community with family neighborhoods throughout. We serve homeowners across Maryland Heights.',
     paragraphs: [
       'Maryland Heights is one of the most diverse markets we serve, with everything from older mid-century neighborhoods to newer condo developments to large entertainment-district properties. The housing variety means we\'ve seen just about every duct configuration in this city.',
-      'Maryland Heights also has higher humidity in some neighborhoods due to proximity to the Missouri River and Creve Coeur Lake — which means slightly elevated mold risk in HVAC systems. Annual sanitization paired with cleaning every few years is a common combination for homes here.',
+      'Maryland Heights also has higher humidity in some neighborhoods due to proximity to the Missouri River and Creve Coeur Lake which means slightly elevated mold risk in HVAC systems. Annual sanitization paired with cleaning every few years is a common combination for homes here.',
       'We work in Maryland Heights several days a week, with same-week scheduling standard.',
     ],
     neighborhoods: ['Schuetz Road corridor', 'Dorsett Road area', 'Page Avenue area'],
@@ -128,7 +128,7 @@ const cities = [
     name: 'University City',
     state: 'MO',
     population: '35,000',
-    intro: 'Historic homes near Washington University. Many older homes with original (or aging) HVAC systems — a great market for our professional duct cleaning.',
+    intro: 'Historic homes near Washington University. Many older homes with original (or aging) HVAC systems a great market for our professional duct cleaning.',
     paragraphs: [
       'University City is one of our favorite markets for old-house duct cleaning. The Loop area, the streets around Washington University, and the historic neighborhoods toward Forest Park all feature homes that are 80 to 120 years old. Their HVAC systems were retrofitted over the years, and the ductwork has accumulated decades of dust.',
       'Many U City homes have central HVAC that was added during 1960s through 90s renovations. The original ductwork was often run through plaster wall chases or attic spaces with limited access. We have the experience and equipment to handle these challenging older systems carefully.',
@@ -151,7 +151,7 @@ const cities = [
     intro: 'Established residential community in North County. We serve homeowners throughout the Hazelwood area.',
     paragraphs: [
       'Hazelwood is one of North County\'s established residential communities, with most homes built between the 1960s and 1990s. These homes have HVAC systems that have been working for decades, and the duct buildup typically reflects that history.',
-      'A pattern we see frequently in Hazelwood: families that have lived in the same home for 20+ years and never had professional cleaning. The first cleaning is dramatic — it\'s common to see 5-10 pounds of dust, hair, and debris extracted from a home\'s duct system. The improvement in air quality is immediately noticeable.',
+      'A pattern we see frequently in Hazelwood: families that have lived in the same home for 20+ years and never had professional cleaning. The first cleaning is dramatic it\'s common to see 5-10 pounds of dust, hair, and debris extracted from a home\'s duct system. The improvement in air quality is immediately noticeable.',
       'We work Hazelwood and the broader North County area regularly. Same-day service often available; same-week is the standard.',
     ],
     neighborhoods: ['Lindbergh corridor', 'Howdershell Road area', 'McDonnell Boulevard area'],
@@ -170,7 +170,7 @@ const cities = [
     intro: 'Near Scott Air Force Base, with a mix of military families and longtime residents. We serve homes throughout O\'Fallon Illinois weekly.',
     paragraphs: [
       'O\'Fallon, IL has a unique mix of military families (Scott Air Force Base is nearby) and longtime Illinois residents. The constant turnover from military reassignments means a lot of homes change hands frequently, and incoming families often book duct cleaning as part of their move-in process. We\'ve cleaned a lot of homes in O\'Fallon for new arrivals who don\'t know the home\'s prior history.',
-      'O\'Fallon\'s newer subdivisions tend to need cleaning sooner than expected — construction dust settles into duct systems during builds and never leaves on its own. If you\'re in a 2010s+ home that has never had professional cleaning, we strongly recommend it.',
+      'O\'Fallon\'s newer subdivisions tend to need cleaning sooner than expected construction dust settles into duct systems during builds and never leaves on its own. If you\'re in a 2010s+ home that has never had professional cleaning, we strongly recommend it.',
       'We make weekly trips across the river to the Metro East. Same-week scheduling is the norm; call early in the week for the best appointment options.',
     ],
     neighborhoods: ['Scott AFB area', 'Highway 50 corridor', 'Green Mount Road area'],
@@ -189,7 +189,7 @@ const cities = [
     population: '24,000',
     intro: 'Historic Madison County city with strong residential demand for air duct cleaning. We\'re regularly in Collinsville neighborhoods.',
     paragraphs: [
-      'Collinsville is a historic Madison County city with a deep mix of older brick homes near downtown and newer construction on the city\'s edges. The city\'s position right off I-55 and I-70 makes it accessible — and the housing stock variety means we see all kinds of duct systems.',
+      'Collinsville is a historic Madison County city with a deep mix of older brick homes near downtown and newer construction on the city\'s edges. The city\'s position right off I-55 and I-70 makes it accessible and the housing stock variety means we see all kinds of duct systems.',
       'Many Collinsville homes near the historic center have HVAC retrofitted into older homes that originally had radiator heat. These systems often have small-bore ductwork running through tight spaces, which can collect buildup faster than modern installations. Our equipment handles both old and new systems.',
       'We schedule Collinsville regularly. Free phone quotes for any home in the area.',
     ],
@@ -206,10 +206,10 @@ const cities = [
     name: 'Alton',
     state: 'IL',
     population: '26,000',
-    intro: 'Historic Mississippi River city with beautiful older homes — many in need of professional duct attention. Limestone bluffs and humid summers make indoor air quality especially important here.',
+    intro: 'Historic Mississippi River city with beautiful older homes many in need of professional duct attention. Limestone bluffs and humid summers make indoor air quality especially important here.',
     paragraphs: [
       'Alton is one of the most historic cities in the Metro East, with a riverfront downtown that dates back nearly 200 years and a housing stock full of beautiful older homes. Many Alton homes are 80-150 years old, with HVAC systems retrofitted into spaces that weren\'t designed for them.',
-      'The combination of Mississippi River humidity, limestone bluffs, and dense old-growth trees means Alton\'s outdoor air carries a lot of moisture and pollen. That moisture and pollen ends up in HVAC systems — making annual or every-few-year duct cleaning especially valuable here.',
+      'The combination of Mississippi River humidity, limestone bluffs, and dense old-growth trees means Alton\'s outdoor air carries a lot of moisture and pollen. That moisture and pollen ends up in HVAC systems making annual or every-few-year duct cleaning especially valuable here.',
       'We make trips to Alton every couple weeks. Same-week scheduling for the area; call us with your address and we\'ll let you know our next available slot.',
     ],
     neighborhoods: ['Historic Downtown', 'Brown Street area', 'Alby Street area'],
@@ -244,9 +244,9 @@ const cities = [
     name: 'Glen Carbon',
     state: 'IL',
     population: '13,000',
-    intro: 'Affluent IL community next to Edwardsville. Newer developments and family homes — many of which we\'ve cleaned multiple times over the years.',
+    intro: 'Affluent IL community next to Edwardsville. Newer developments and family homes many of which we\'ve cleaned multiple times over the years.',
     paragraphs: [
-      'Glen Carbon is one of the most affluent communities in the Metro East, with a housing stock dominated by newer single-family homes built in the 1990s, 2000s, and 2010s. Many of these homes have multi-zone HVAC systems with extensive ductwork — and the cleaning needs scale with the size of the system.',
+      'Glen Carbon is one of the most affluent communities in the Metro East, with a housing stock dominated by newer single-family homes built in the 1990s, 2000s, and 2010s. Many of these homes have multi-zone HVAC systems with extensive ductwork and the cleaning needs scale with the size of the system.',
       'A common pattern in Glen Carbon: homeowners book us 5-7 years after move-in once they realize the original construction dust never really cleared out of the duct system. The first cleaning often pulls a substantial amount of fine drywall and sawdust that\'s been quietly circulating since the home was built.',
       'We schedule Glen Carbon weekly. Same-week service is standard.',
     ],
@@ -266,7 +266,7 @@ const cities = [
     intro: 'Monroe County\'s largest city, just south of the Metro East. We make regular trips to Waterloo to serve residential customers.',
     paragraphs: [
       'Waterloo is the largest city in Monroe County, IL, and one of the southernmost markets we serve. The city has a small-town feel with strong residential demand for home services. Most of the housing is single-family, with a mix of older homes near downtown and newer subdivisions on the edges.',
-      'Monroe County\'s rural-edge geography means a lot of homes here are surrounded by trees, fields, and gravel roads — all sources of fine dust that ends up in HVAC return registers. After a few years, that buildup adds up, and a professional cleaning is a high-impact maintenance item.',
+      'Monroe County\'s rural-edge geography means a lot of homes here are surrounded by trees, fields, and gravel roads all sources of fine dust that ends up in HVAC return registers. After a few years, that buildup adds up, and a professional cleaning is a high-impact maintenance item.',
       'We make Waterloo trips approximately every two weeks. Call us early in the week to coordinate scheduling for the area.',
     ],
     neighborhoods: ['Downtown Waterloo', 'Highway 3 corridor', 'Lakeview Drive area'],
@@ -398,7 +398,7 @@ const buildPage = (city) => `<!DOCTYPE html>
         <a href="index.html">Home</a><span>/</span><a href="service-areas.html">Service Areas</a><span>/</span><span>${city.name}, ${city.state}</span>
       </div>
       <h1>Air Duct Cleaning in ${city.name}, ${city.state}</h1>
-      <p>Family-owned, locally trusted, and serving ${city.name} homes since 2014. Same-day service often available — call (314) 718-3632.</p>
+      <p>Family-owned, locally trusted, and serving ${city.name} homes since 2014. Same-day service often available call (314) 718-3632.</p>
     </div>
   </div>
 
@@ -428,10 +428,10 @@ const buildPage = (city) => `<!DOCTYPE html>
           </div>
         </div>
 
-${city.paragraphs.map(p => `        <p>${p}</p>`).join('\n\n')}
+${city.paragraphs.map(p => ` <p>${p}</p>`).join('\n\n')}
 
         <h3>Neighborhoods We Serve in ${city.name}</h3>
-        <p>We work throughout ${city.name}, including ${city.neighborhoods.join(', ')} — and everywhere in between. If you're not sure whether we cover your specific neighborhood, just give us a call.</p>
+        <p>We work throughout ${city.name}, including ${city.neighborhoods.join(', ')} and everywhere in between. If you're not sure whether we cover your specific neighborhood, just give us a call.</p>
 
         <h3>Drive Time</h3>
         <p>${city.drivetime} For most calls, we can be at your ${city.name} home within a day or two.</p>
@@ -472,7 +472,7 @@ ${city.paragraphs.map(p => `        <p>${p}</p>`).join('\n\n')}
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><polyline points="21 3 21 8 16 8"/></svg>
           </div>
           <h3>HVAC System Cleaning</h3>
-          <p>Beyond ducts — coil, blower, and air handler cleaning for full system efficiency.</p>
+          <p>Beyond ducts coil, blower, and air handler cleaning for full system efficiency.</p>
           <a href="hvac-cleaning.html" class="service-link">Learn More →</a>
         </article>
       </div>
@@ -487,7 +487,7 @@ ${city.paragraphs.map(p => `        <p>${p}</p>`).join('\n\n')}
       </div>
 
       <div class="nearby-cities" style="justify-content: center;">
-${city.nearbyCities.map(nc => `        <a href="${nc.slug}.html">${nc.name}</a>`).join('\n')}
+${city.nearbyCities.map(nc => ` <a href="${nc.slug}.html">${nc.name}</a>`).join('\n')}
         <a href="service-areas.html">View All Service Areas →</a>
       </div>
     </div>
@@ -496,7 +496,7 @@ ${city.nearbyCities.map(nc => `        <a href="${nc.slug}.html">${nc.name}</a>`
   <section class="cta-section">
     <div class="container">
       <h2>Ready to Schedule Your ${city.name} Cleaning?</h2>
-      <p>Get a free estimate today. Call us or send a message — we respond within 30 minutes during business hours.</p>
+      <p>Get a free estimate today. Call us or send a message we respond within 30 minutes during business hours.</p>
       <div class="cta-buttons">
         <a href="contact.html" class="btn btn-primary btn-large">Get Free Estimate</a>
         <a href="tel:+13147183632" class="btn btn-light btn-large">📞 Call (314) 718-3632</a>

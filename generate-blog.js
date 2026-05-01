@@ -12,7 +12,7 @@ const posts = [
     metaDesc: 'How often should you clean your air ducts? NADCA recommends every 3-7 years, but here\'s what really determines the right schedule for your home.',
     eyebrow: 'NADCA Guide • 6 min read',
     h1: 'How Often Should You Clean Your Air Ducts?',
-    intro: 'The short answer most contractors will give you: every 3 to 7 years. That\'s the National Air Duct Cleaners Association (NADCA) recommendation, and it\'s a useful starting point. But the real answer depends on your specific home — the people in it, the pets, the age of the system, and the climate. After 11 years of cleaning ducts in St. Louis homes, here\'s what we actually tell our customers.',
+    intro: 'The short answer most contractors will give you: every 3 to 7 years. That\'s the National Air Duct Cleaners Association (NADCA) recommendation, and it\'s a useful starting point. But the real answer depends on your specific home the people in it, the pets, the age of the system, and the climate. After 11 years of cleaning ducts in St. Louis homes, here\'s what we actually tell our customers.',
     image: '../images/service-1.webp',
     image_alt: 'Air duct cleaning frequency guide',
     sections: [
@@ -22,7 +22,7 @@ const posts = [
       },
       {
         h: 'Factors That Mean You Should Clean Sooner',
-        body: '<p>Push toward the 3-year end of the range — or sooner — if any of these apply to your home:</p><ul><li><strong>Pets that shed.</strong> Dogs and cats add huge amounts of dander and hair to the duct system. Two shedding pets can effectively cut cleaning intervals in half.</li><li><strong>Allergies, asthma, or respiratory conditions.</strong> Anyone in the household with sensitivity to dust, pollen, mold, or pet dander benefits from more frequent cleaning.</li><li><strong>Recent renovations.</strong> Drywall dust, sawdust, and construction debris settle deep into duct systems and stay there until extracted. After any major renovation, schedule a cleaning.</li><li><strong>You moved into a previously occupied home.</strong> You don\'t know when (or if) the previous owners ever cleaned the ducts. Better to start fresh.</li><li><strong>Smokers in the home.</strong> Tobacco residue coats duct interiors and continues to off-gas long after you can\'t smell it.</li><li><strong>Visible mold or musty smells.</strong> If the system smells musty when it kicks on, that\'s biofilm growing inside. Clean and sanitize.</li><li><strong>Water damage history.</strong> Any flood, leak, or water event near the HVAC system creates conditions for mold growth.</li><li><strong>Older home (50+ years).</strong> Older ducts have had more time to accumulate buildup and often have less efficient sealing.</li></ul>'
+        body: '<p>Push toward the 3-year end of the range or sooner if any of these apply to your home:</p><ul><li><strong>Pets that shed.</strong> Dogs and cats add huge amounts of dander and hair to the duct system. Two shedding pets can effectively cut cleaning intervals in half.</li><li><strong>Allergies, asthma, or respiratory conditions.</strong> Anyone in the household with sensitivity to dust, pollen, mold, or pet dander benefits from more frequent cleaning.</li><li><strong>Recent renovations.</strong> Drywall dust, sawdust, and construction debris settle deep into duct systems and stay there until extracted. After any major renovation, schedule a cleaning.</li><li><strong>You moved into a previously occupied home.</strong> You don\'t know when (or if) the previous owners ever cleaned the ducts. Better to start fresh.</li><li><strong>Smokers in the home.</strong> Tobacco residue coats duct interiors and continues to off-gas long after you can\'t smell it.</li><li><strong>Visible mold or musty smells.</strong> If the system smells musty when it kicks on, that\'s biofilm growing inside. Clean and sanitize.</li><li><strong>Water damage history.</strong> Any flood, leak, or water event near the HVAC system creates conditions for mold growth.</li><li><strong>Older home (50+ years).</strong> Older ducts have had more time to accumulate buildup and often have less efficient sealing.</li></ul>'
       },
       {
         h: 'Factors That Mean You Can Wait',
@@ -30,7 +30,7 @@ const posts = [
       },
       {
         h: 'Why St. Louis Climate Matters',
-        body: '<p>St. Louis\'s humid summers and pollen-heavy springs put extra stress on duct systems. Mold and biofilm grow faster in humid air. Spring tree pollen — oak, maple, sycamore — gets pulled into return registers in massive quantities. Compared to drier climates, most St. Louis homes need cleaning a year or two sooner than the standard recommendation.</p>'
+        body: '<p>St. Louis\'s humid summers and pollen-heavy springs put extra stress on duct systems. Mold and biofilm grow faster in humid air. Spring tree pollen oak, maple, sycamore gets pulled into return registers in massive quantities. Compared to drier climates, most St. Louis homes need cleaning a year or two sooner than the standard recommendation.</p>'
       },
       {
         h: 'Signs You\'re Overdue Right Now',
@@ -38,11 +38,11 @@ const posts = [
       },
       {
         h: 'What About Dryer Vents?',
-        body: '<p>Dryer vents are different. We recommend <strong>annual cleaning</strong> for any household — every 6 months for families that do laundry every day or have long vent runs. Dryer vent buildup is a fire hazard, and lint accumulates fast. <a href="dryer-vent-fire-safety.html">Read more about dryer vent safety.</a></p>'
+        body: '<p>Dryer vents are different. We recommend <strong>annual cleaning</strong> for any household every 6 months for families that do laundry every day or have long vent runs. Dryer vent buildup is a fire hazard, and lint accumulates fast. <a href="dryer-vent-fire-safety.html">Read more about dryer vent safety.</a></p>'
       },
       {
         h: 'Bottom Line',
-        body: '<p>For most St. Louis families with kids, pets, or allergies — plan on professional duct cleaning every 3-5 years. For lower-impact households, every 5-7 years is fine. If you\'re not sure where your home stands, give us a call. We\'ll ask a few honest questions and tell you whether you\'re due now or could safely wait another year. We\'d rather earn a customer for life than push a job that isn\'t ready.</p>'
+        body: '<p>For most St. Louis families with kids, pets, or allergies plan on professional duct cleaning every 3-5 years. For lower-impact households, every 5-7 years is fine. If you\'re not sure where your home stands, give us a call. We\'ll ask a few honest questions and tell you whether you\'re due now or could safely wait another year. We\'d rather earn a customer for life than push a job that isn\'t ready.</p>'
       }
     ],
     cta: 'Need a Cleaning?',
@@ -51,28 +51,28 @@ const posts = [
   {
     slug: '10-signs-air-ducts-need-cleaning',
     title: '10 Signs Your Air Ducts Need Cleaning RIGHT NOW',
-    metaDesc: 'Visible dust, musty smells, unexplained allergies — here are 10 clear signs your air ducts are overdue for professional cleaning.',
+    metaDesc: 'Visible dust, musty smells, unexplained allergies here are 10 clear signs your air ducts are overdue for professional cleaning.',
     eyebrow: 'Checklist • 5 min read',
     h1: '10 Signs Your Air Ducts Need Cleaning RIGHT NOW',
-    intro: 'Most homeowners don\'t think about their air ducts until something goes wrong — and by then, the dust, dander, and debris have been recycling through every breath their family takes for years. Here are 10 clear warning signs that mean it\'s time to schedule a professional cleaning.',
+    intro: 'Most homeowners don\'t think about their air ducts until something goes wrong and by then, the dust, dander, and debris have been recycling through every breath their family takes for years. Here are 10 clear warning signs that mean it\'s time to schedule a professional cleaning.',
     image: '../images/duct-cleaner.webp',
     image_alt: '10 signs ducts need cleaning checklist',
     sections: [
       {
         h: '1. Visible Dust Around the Vents',
-        body: '<p>Dust the area around your supply registers. Run the HVAC for a day or two. Look again. If dust is collecting on or near the vents faster than anywhere else in the room — your ducts are pushing it. That\'s the most common visual sign of a system that needs cleaning.</p>'
+        body: '<p>Dust the area around your supply registers. Run the HVAC for a day or two. Look again. If dust is collecting on or near the vents faster than anywhere else in the room your ducts are pushing it. That\'s the most common visual sign of a system that needs cleaning.</p>'
       },
       {
         h: '2. Musty or Stale Smell When the System Runs',
-        body: '<p>Turn on the AC after a long off period. Does the air smell musty for the first few minutes? That\'s biofilm or mold growing inside the duct system or on the evaporator coil. Cleaning removes the source of the smell — and a sanitization treatment kills what\'s left.</p>'
+        body: '<p>Turn on the AC after a long off period. Does the air smell musty for the first few minutes? That\'s biofilm or mold growing inside the duct system or on the evaporator coil. Cleaning removes the source of the smell and a sanitization treatment kills what\'s left.</p>'
       },
       {
         h: '3. Allergies That Get Worse Indoors',
-        body: '<p>If your allergy symptoms worsen when you\'re home — especially when the HVAC is running — your ducts may be circulating allergens. Dust mites, pet dander, pollen, and mold spores all collect in ductwork and get pushed out every time the fan turns on.</p>'
+        body: '<p>If your allergy symptoms worsen when you\'re home especially when the HVAC is running your ducts may be circulating allergens. Dust mites, pet dander, pollen, and mold spores all collect in ductwork and get pushed out every time the fan turns on.</p>'
       },
       {
         h: '4. Pets That Shed (And Have Been Around for Years)',
-        body: '<p>Pet hair and dander accumulate in duct systems faster than any other contaminant. If you\'ve had shedding pets for several years and never had professional cleaning — there\'s a substantial layer of pet hair coating your duct interiors. Remove it.</p>'
+        body: '<p>Pet hair and dander accumulate in duct systems faster than any other contaminant. If you\'ve had shedding pets for several years and never had professional cleaning there\'s a substantial layer of pet hair coating your duct interiors. Remove it.</p>'
       },
       {
         h: '5. You Just Moved Into a New (or New-to-You) Home',
@@ -80,11 +80,11 @@ const posts = [
       },
       {
         h: '6. Recent Home Renovations',
-        body: '<p>Any major remodel — kitchen, bath, basement, addition — sends fine dust through the entire HVAC system. Even if you sealed off the work area, microscopic drywall dust and sawdust always finds its way into the ducts. Schedule a cleaning when the project finishes.</p>'
+        body: '<p>Any major remodel kitchen, bath, basement, addition sends fine dust through the entire HVAC system. Even if you sealed off the work area, microscopic drywall dust and sawdust always finds its way into the ducts. Schedule a cleaning when the project finishes.</p>'
       },
       {
         h: '7. Visible Mold at the Registers',
-        body: '<p>If you see black or dark green spots on the register vents themselves, or if there\'s visible mold on the air handler — there\'s a mold problem in the system. Don\'t cover it up; clean it. Sanitization is also recommended in this case to kill any remaining microbial growth.</p>'
+        body: '<p>If you see black or dark green spots on the register vents themselves, or if there\'s visible mold on the air handler there\'s a mold problem in the system. Don\'t cover it up; clean it. Sanitization is also recommended in this case to kill any remaining microbial growth.</p>'
       },
       {
         h: '8. Energy Bills Have Crept Up',
@@ -96,11 +96,11 @@ const posts = [
       },
       {
         h: '10. It\'s Been More Than 5 Years',
-        body: '<p>If you can\'t remember the last time you had professional cleaning, or it\'s been more than 5 years — it\'s overdue. Even without any of the other signs, 5+ years is enough time for substantial buildup, especially in St. Louis\' humid climate.</p>'
+        body: '<p>If you can\'t remember the last time you had professional cleaning, or it\'s been more than 5 years it\'s overdue. Even without any of the other signs, 5+ years is enough time for substantial buildup, especially in St. Louis\' humid climate.</p>'
       },
       {
         h: 'What to Do Now',
-        body: '<p>If you noticed any of these signs in your home, the next step is simple: call a family-owned, BBB-accredited cleaner for a free quote. <a href="../contact.html">Get a free estimate</a> or call <a href="tel:+13147183632">(314) 718-3632</a> — we\'ll ask a few questions and tell you honestly whether your home is overdue.</p>'
+        body: '<p>If you noticed any of these signs in your home, the next step is simple: call a family-owned, BBB-accredited cleaner for a free quote. <a href="../contact.html">Get a free estimate</a> or call <a href="tel:+13147183632">(314) 718-3632</a> we\'ll ask a few questions and tell you honestly whether your home is overdue.</p>'
       }
     ],
     cta: 'Spotted a Sign?',
@@ -108,17 +108,17 @@ const posts = [
   },
   {
     slug: 'air-duct-cleaning-cost-st-louis',
-    title: 'Air Duct Cleaning Cost in St. Louis — Honest Pricing Guide',
+    title: 'Air Duct Cleaning Cost in St. Louis Honest Pricing Guide',
     metaDesc: 'How much should air duct cleaning cost in St. Louis? Here\'s an honest breakdown of pricing, what drives cost up or down, and how to spot rip-offs.',
     eyebrow: 'Pricing Guide • 7 min read',
-    h1: 'Air Duct Cleaning Cost in St. Louis — Honest Pricing Guide',
-    intro: 'Air duct cleaning prices vary widely — and unfortunately, the industry has some bad actors. You\'ve probably seen the $79 "whole house cleaning" coupons in the mail. They\'re bait. Here\'s an honest look at what professional duct cleaning actually costs in St. Louis, what drives the price up or down, and how to spot the scams.',
+    h1: 'Air Duct Cleaning Cost in St. Louis Honest Pricing Guide',
+    intro: 'Air duct cleaning prices vary widely and unfortunately, the industry has some bad actors. You\'ve probably seen the $79 "whole house cleaning" coupons in the mail. They\'re bait. Here\'s an honest look at what professional duct cleaning actually costs in St. Louis, what drives the price up or down, and how to spot the scams.',
     image: '../images/work-photo.jpg',
     image_alt: 'Air duct cleaning cost guide for St. Louis',
     sections: [
       {
         h: 'The Honest Pricing Range',
-        body: '<p>For a typical St. Louis home with one HVAC system, professional duct cleaning falls in a fair range that depends on a handful of factors. Smaller homes or simpler systems land at the lower end of that range. Larger homes, multi-zone systems, or homes with heavy buildup land higher. Any reputable cleaner will give you a written quote based on your specific home — not a flat "everyone pays the same" coupon price.</p><p>Why we don\'t publish exact dollar figures: every home is different. A 1,200-square-foot ranch with one HVAC unit is a fundamentally different job than a 4,500-square-foot home with three zones. Quoting one price for both is dishonest. Call us and we\'ll give you a real number for your real home.</p>'
+        body: '<p>For a typical St. Louis home with one HVAC system, professional duct cleaning falls in a fair range that depends on a handful of factors. Smaller homes or simpler systems land at the lower end of that range. Larger homes, multi-zone systems, or homes with heavy buildup land higher. Any reputable cleaner will give you a written quote based on your specific home not a flat "everyone pays the same" coupon price.</p><p>Why we don\'t publish exact dollar figures: every home is different. A 1,200-square-foot ranch with one HVAC unit is a fundamentally different job than a 4,500-square-foot home with three zones. Quoting one price for both is dishonest. Call us and we\'ll give you a real number for your real home.</p>'
       },
       {
         h: 'What Drives the Price Up',
@@ -134,7 +134,7 @@ const posts = [
       },
       {
         h: 'How to Get a Fair Quote',
-        body: '<p>Three simple steps:</p><ol style="padding-left: 20px;"><li><strong>Call 2-3 reputable local cleaners</strong> (we\'re happy to be one of them). Get phone quotes for your specific home — square footage, number of HVAC units, age of system, last cleaning.</li><li><strong>Ask about what\'s included.</strong> Some cleaners do supply ducts only; others include returns and air handler. Compare apples to apples.</li><li><strong>Read recent reviews.</strong> Not just on the company\'s own site — Google, Yelp, BBB, HomeAdvisor. Look for consistency across platforms.</li></ol>'
+        body: '<p>Three simple steps:</p><ol style="padding-left: 20px;"><li><strong>Call 2-3 reputable local cleaners</strong> (we\'re happy to be one of them). Get phone quotes for your specific home square footage, number of HVAC units, age of system, last cleaning.</li><li><strong>Ask about what\'s included.</strong> Some cleaners do supply ducts only; others include returns and air handler. Compare apples to apples.</li><li><strong>Read recent reviews.</strong> Not just on the company\'s own site Google, Yelp, BBB, HomeAdvisor. Look for consistency across platforms.</li></ol>'
       },
       {
         h: 'Why We Don\'t Discount',
@@ -142,7 +142,7 @@ const posts = [
       },
       {
         h: 'Get a Real Quote for Your Real Home',
-        body: '<p>Tell us your home: square footage, number of HVAC units, age of system, last cleaning, pets, anyone with allergies. We\'ll give you a real quote — in writing, no obligation. If you\'re ready to schedule, we can usually be at your home within a day or two. Same-day service often available.</p><p><a href="../contact.html" class="btn btn-primary">Get Free Estimate</a> or call <a href="tel:+13147183632"><strong>(314) 718-3632</strong></a></p>'
+        body: '<p>Tell us your home: square footage, number of HVAC units, age of system, last cleaning, pets, anyone with allergies. We\'ll give you a real quote in writing, no obligation. If you\'re ready to schedule, we can usually be at your home within a day or two. Same-day service often available.</p><p><a href="../contact.html" class="btn btn-primary">Get Free Estimate</a> or call <a href="tel:+13147183632"><strong>(314) 718-3632</strong></a></p>'
       }
     ],
     cta: 'Get an Honest Quote',
@@ -154,13 +154,13 @@ const posts = [
     metaDesc: 'Nearly 2,900 dryer fires happen in the US every year. Lint buildup is the #1 cause. Here\'s the complete safety guide for homeowners.',
     eyebrow: 'Fire Safety • 6 min read',
     h1: 'Dryer Vent Fire Safety: What Every Homeowner Should Know',
-    intro: 'Every year in the U.S., dryers cause nearly 2,900 home fires — resulting in deaths, injuries, and over $35 million in property damage. The leading cause is one easy thing to fix: <strong>lint buildup in the dryer vent.</strong> Here\'s what every homeowner needs to know about preventing it.',
+    intro: 'Every year in the U.S., dryers cause nearly 2,900 home fires resulting in deaths, injuries, and over $35 million in property damage. The leading cause is one easy thing to fix: <strong>lint buildup in the dryer vent.</strong> Here\'s what every homeowner needs to know about preventing it.',
     image: '../images/hero-tech-working.jpg',
     image_alt: 'Dryer vent fire safety guide',
     sections: [
       {
         h: 'How Dryer Fires Actually Start',
-        body: '<p>Lint is highly flammable. The lint trap inside your dryer catches only a fraction of what your clothes produce — the rest builds up inside the vent line over months and years. As the line gets clogged, hot air can\'t escape efficiently. The dryer overheats. Eventually the heating element ignites the lint and the fire spreads through the vent line into the wall, the laundry room, and the rest of the home.</p><p>The U.S. Fire Administration reports that lint buildup is the leading factor contributing to dryer fires. The fix is simple — annual professional cleaning of the entire vent line, not just the lint trap.</p>'
+        body: '<p>Lint is highly flammable. The lint trap inside your dryer catches only a fraction of what your clothes produce the rest builds up inside the vent line over months and years. As the line gets clogged, hot air can\'t escape efficiently. The dryer overheats. Eventually the heating element ignites the lint and the fire spreads through the vent line into the wall, the laundry room, and the rest of the home.</p><p>The U.S. Fire Administration reports that lint buildup is the leading factor contributing to dryer fires. The fix is simple annual professional cleaning of the entire vent line, not just the lint trap.</p>'
       },
       {
         h: 'Warning Signs Your Vent Is Dangerous',
@@ -168,11 +168,11 @@ const posts = [
       },
       {
         h: 'What the Lint Trap Doesn\'t Catch',
-        body: '<p>The lint trap inside your dryer catches roughly 70% of the lint your clothes produce. The other 30% — the fine, fluffy stuff that escapes the trap — gets blown into the vent line. Over time, that fine lint accumulates inside the vent walls, around bends, and at the outside termination. After a year of regular use, most vent lines have a substantial buildup. After three or four years without cleaning, many are dangerously clogged.</p>'
+        body: '<p>The lint trap inside your dryer catches roughly 70% of the lint your clothes produce. The other 30% the fine, fluffy stuff that escapes the trap gets blown into the vent line. Over time, that fine lint accumulates inside the vent walls, around bends, and at the outside termination. After a year of regular use, most vent lines have a substantial buildup. After three or four years without cleaning, many are dangerously clogged.</p>'
       },
       {
         h: 'Why Newer Homes Are at Higher Risk',
-        body: '<p>Counterintuitively, newer homes often have <em>worse</em> vent problems than older homes. The reason: longer vent runs. Older homes typically had short, direct vent paths from the dryer to the outside wall. Newer construction often runs the vent through walls, ceilings, attics, or up through the roof — sometimes 20 to 40 feet or more, with multiple bends. Every bend is a place lint accumulates faster.</p><p>If you live in a home built after 2000, your vent line is probably longer and more complex than you think. That makes annual cleaning even more important.</p>'
+        body: '<p>Counterintuitively, newer homes often have <em>worse</em> vent problems than older homes. The reason: longer vent runs. Older homes typically had short, direct vent paths from the dryer to the outside wall. Newer construction often runs the vent through walls, ceilings, attics, or up through the roof sometimes 20 to 40 feet or more, with multiple bends. Every bend is a place lint accumulates faster.</p><p>If you live in a home built after 2000, your vent line is probably longer and more complex than you think. That makes annual cleaning even more important.</p>'
       },
       {
         h: 'How Often to Clean',
@@ -184,11 +184,11 @@ const posts = [
       },
       {
         h: 'Things You Can Do at Home',
-        body: '<p>Between professional cleanings, you can reduce risk yourself:</p><ul><li><strong>Empty the lint trap before every load.</strong> Every. Single. Load.</li><li><strong>Wipe the lint trap monthly</strong> with a damp cloth — fabric softener residue clogs the screen even when it looks clean.</li><li><strong>Don\'t leave the dryer running unattended</strong> when leaving the house or going to sleep.</li><li><strong>Inspect the outside vent cap monthly</strong> — make sure the flap moves freely and isn\'t blocked.</li><li><strong>Pull the dryer out once a year</strong> and vacuum behind it.</li><li><strong>Don\'t overload the dryer</strong> — restricted airflow even with a clean vent is dangerous.</li><li><strong>Replace plastic or vinyl flex hose</strong> with rigid metal duct (much safer and easier to clean).</li></ul>'
+        body: '<p>Between professional cleanings, you can reduce risk yourself:</p><ul><li><strong>Empty the lint trap before every load.</strong> Every. Single. Load.</li><li><strong>Wipe the lint trap monthly</strong> with a damp cloth fabric softener residue clogs the screen even when it looks clean.</li><li><strong>Don\'t leave the dryer running unattended</strong> when leaving the house or going to sleep.</li><li><strong>Inspect the outside vent cap monthly</strong> make sure the flap moves freely and isn\'t blocked.</li><li><strong>Pull the dryer out once a year</strong> and vacuum behind it.</li><li><strong>Don\'t overload the dryer</strong> restricted airflow even with a clean vent is dangerous.</li><li><strong>Replace plastic or vinyl flex hose</strong> with rigid metal duct (much safer and easier to clean).</li></ul>'
       },
       {
         h: 'Schedule Cleaning Now',
-        body: '<p>Annual dryer vent cleaning is one of the easiest and most affordable home maintenance tasks — and one of the most important. If you can\'t remember the last time you had it done, or any of the warning signs above are happening in your home, schedule a cleaning today. Same-day service often available in Greater St. Louis.</p>'
+        body: '<p>Annual dryer vent cleaning is one of the easiest and most affordable home maintenance tasks and one of the most important. If you can\'t remember the last time you had it done, or any of the warning signs above are happening in your home, schedule a cleaning today. Same-day service often available in Greater St. Louis.</p>'
       }
     ],
     cta: 'Schedule Your Dryer Vent Cleaning',
@@ -324,7 +324,7 @@ const buildPost = (post) => `<!DOCTYPE html>
 
         <img src="${post.image}" alt="${post.image_alt}" style="width: 100%; max-width: 900px; aspect-ratio: 16/9; object-fit: cover; border-radius: 12px; margin: 32px auto; display: block; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);" loading="lazy">
 
-${post.sections.map(s => `        <h2>${s.h}</h2>\n        ${s.body}`).join('\n\n')}
+${post.sections.map(s => ` <h2>${s.h}</h2>\n ${s.body}`).join('\n\n')}
       </div>
     </div>
   </section>
@@ -359,7 +359,7 @@ ${post.sections.map(s => `        <h2>${s.h}</h2>\n        ${s.body}`).join('\n\
           <div class="blog-card-body">
             <span class="blog-card-meta">Checklist</span>
             <h3><a href="10-signs-air-ducts-need-cleaning.html">10 Signs Your Air Ducts Need Cleaning RIGHT NOW</a></h3>
-            <p>Visible dust, musty smell, allergies — 10 red flags that mean it's time.</p>
+            <p>Visible dust, musty smell, allergies 10 red flags that mean it's time.</p>
             <a href="10-signs-air-ducts-need-cleaning.html" class="blog-card-link">Read More →</a>
           </div>
         </article>
@@ -367,7 +367,7 @@ ${post.sections.map(s => `        <h2>${s.h}</h2>\n        ${s.body}`).join('\n\
           <div class="blog-card-body">
             <span class="blog-card-meta">Pricing</span>
             <h3><a href="air-duct-cleaning-cost-st-louis.html">Air Duct Cleaning Cost in St. Louis</a></h3>
-            <p>An honest pricing guide — and how to spot the rip-off coupons.</p>
+            <p>An honest pricing guide and how to spot the rip-off coupons.</p>
             <a href="air-duct-cleaning-cost-st-louis.html" class="blog-card-link">Read More →</a>
           </div>
         </article>
