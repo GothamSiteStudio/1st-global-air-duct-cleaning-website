@@ -1,0 +1,9 @@
+# 1st Global Air Duct Cleaning - robots.txt
+# https://1stglobalairductcleaning.com/
+
+User-agent: *
+Allow: /
+Disallow: /generate-cities.js
+Disallow: /generate-blog.js
+
+Sitemap: https://1stglobalairductcleaning.com/sitemap.xml
