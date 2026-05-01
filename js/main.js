@@ -82,12 +82,13 @@
   });
 
   // ---------- Form Validation & Submission ----------
+  // Forms with action set to a real endpoint (e.g., FormSubmit) will submit normally
+  // when validation passes. Forms with action="#" or empty get the legacy fake-success
+  // behavior so the dev preview still shows feedback.
   const forms = document.querySelectorAll('form');
 
   forms.forEach(form => {
     form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
       // Basic validation
       const requiredFields = form.querySelectorAll('[required]');
       let isValid = true;
@@ -120,17 +121,29 @@
       });
 
       if (!isValid) {
+        e.preventDefault();
         showFormMessage(form, 'Please fill in all required fields correctly.', 'error');
         return;
       }
 
-      // Show success message (in production, this would submit to a server)
-      showFormMessage(form, '✓ Thank you! We\'ll respond within 30 minutes during business hours.', 'success');
+      // If the form has a real action URL, let it submit naturally to the server.
+      const action = form.getAttribute('action');
+      const hasRealAction = action && action !== '#' && action.trim() !== '';
 
-      // Reset form after a delay
-      setTimeout(() => {
-        form.reset();
-      }, 3000);
+      if (hasRealAction) {
+        // Disable submit button to prevent double-submit while the request is in flight.
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+        }
+        return; // allow native submission
+      }
+
+      // Fallback (no real action set): show fake success and reset
+      e.preventDefault();
+      showFormMessage(form, '✓ Thank you! We\'ll respond within 30 minutes during business hours.', 'success');
+      setTimeout(() => { form.reset(); }, 3000);
     });
 
     // Clear error styling on input
