@@ -5,6 +5,84 @@
 (function() {
   'use strict';
 
+  const REVIEW_DATA = [
+    {
+      author: 'Sarah M.',
+      location: 'Chesterfield, MO',
+      platform: 'Google',
+      time: '2 weeks ago',
+      text: 'Outstanding work from start to finish. The technicians showed up on time, walked me through the entire process, and the difference in our home\'s air quality is unbelievable. We have two dogs and someone in the family with asthma, and the change was immediate.'
+    },
+    {
+      author: 'Mike R.',
+      location: 'St. Louis, MO',
+      platform: 'Google',
+      text: 'Honest pricing, great communication, and they actually showed me before-and-after photos of the ducts. Worth every penny. Will be using them annually for dryer vent cleaning.'
+    },
+    {
+      author: 'Jennifer L.',
+      location: 'Chesterfield, MO',
+      platform: 'Yelp',
+      text: 'We just moved into our home in Chesterfield and you wouldn\'t believe the dust they pulled out of the ducts. Professional, friendly, and respectful of our home. Highly recommend.'
+    },
+    {
+      author: 'David K.',
+      location: 'Kirkwood, MO',
+      platform: 'BBB',
+      text: 'After years of putting it off, I finally got our ducts cleaned. The team at 1st Global was thorough, courteous, and the price matched the estimate exactly. No surprises. Will recommend to neighbors.'
+    },
+    {
+      author: 'Amanda T.',
+      location: "O'Fallon, MO",
+      platform: 'Google',
+      text: 'Called them about a dryer that was taking forever to dry clothes. They came out the same day, found a serious lint blockage in the vent line, and cleaned it out completely. Dryer works like new and they probably saved us from a fire.'
+    },
+    {
+      author: 'Robert H.',
+      location: 'Webster Groves, MO',
+      platform: 'HomeAdvisor',
+      text: 'Mor and his crew are the real deal. Family-owned, fair pricing, and they treat your home like it\'s their own. We\'ve used them three times now across two houses. They\'ve earned a customer for life.'
+    },
+    {
+      author: 'Linda P.',
+      location: 'Ladue, MO',
+      platform: 'Google',
+      text: 'I have terrible spring allergies and was sneezing every time the AC kicked on. After they cleaned the ducts, the difference in two days was like night and day. Highly recommend for anyone with allergies.'
+    },
+    {
+      author: 'Chris W.',
+      location: 'Edwardsville, IL',
+      platform: 'Thumbtack',
+      text: 'Got quotes from three companies. 1st Global was not the cheapest and not the most expensive but they were the only ones who actually inspected the ducts before quoting. That told me everything I needed to know. Great work.'
+    },
+    {
+      author: 'Karen S.',
+      location: 'Florissant, MO',
+      platform: 'Google',
+      text: 'Fast scheduling, polite team, clean job. They wore booties indoors, protected the floors, and left zero mess. The before-and-after photos were eye-opening. I had no idea our ducts were that bad.'
+    },
+    {
+      author: 'Tom B.',
+      location: 'University City, MO',
+      platform: 'Yelp',
+      text: 'Bought a 1950s home in University City. Decades of dust, fur, and who knows what else came out of those ducts. Felt like a new house when they were done. Already booked them for the dryer vent.'
+    },
+    {
+      author: 'Patricia D.',
+      location: 'Belleville, IL',
+      platform: 'BBB',
+      text: 'Great experience from the first phone call to the final walkthrough. Mor answered all my questions, the techs explained everything, and the price was fair. I\'ll be referring them to my whole family.'
+    },
+    {
+      author: 'Elaine M.',
+      location: 'Clayton, MO Office Manager',
+      platform: 'Google',
+      text: 'Hired them for our small office building. Worked around our hours, finished in one day, and our staff noticed the air felt fresher within a week. We\'ll have them back annually.'
+    }
+  ];
+
+  const REVIEW_AVATAR_COLORS = ['#4285F4', '#EA4335', '#FBBC04', '#34A853', '#0A4D8C', '#10B981', '#7C3AED', '#D97706'];
+
   // ---------- Mobile Menu Toggle ----------
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
   const navList = document.getElementById('navList');
@@ -80,6 +158,150 @@
       }
     });
   });
+
+  // ---------- Reviews Widget ----------
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function getReviewInitials(name) {
+    return name
+      .split(/\s+/)
+      .filter(Boolean)
+      .slice(0, 2)
+      .map(part => part.charAt(0))
+      .join('')
+      .toUpperCase();
+  }
+
+  function getAvatarColor(name) {
+    const hash = name.split('').reduce((total, char) => total + char.charCodeAt(0), 0);
+    return REVIEW_AVATAR_COLORS[hash % REVIEW_AVATAR_COLORS.length];
+  }
+
+  function getReviewPages(totalPages, currentPage) {
+    if (totalPages <= 7) {
+      return Array.from({ length: totalPages }, (_, index) => index + 1);
+    }
+
+    const pages = [1];
+    const start = Math.max(2, currentPage);
+    const end = Math.min(totalPages - 1, currentPage + 2);
+
+    if (start > 2) {
+      pages.push('ellipsis-start');
+    }
+
+    for (let page = start; page <= end; page += 1) {
+      pages.push(page);
+    }
+
+    if (end < totalPages - 1) {
+      pages.push('ellipsis-end');
+    }
+
+    pages.push(totalPages);
+    return pages;
+  }
+
+  function createReviewCard(review) {
+    const timeMarkup = review.time ? `<span class="review-widget-time">${escapeHtml(review.time)}</span>` : '';
+    return `
+      <article class="review-widget-card" aria-label="Review by ${escapeHtml(review.author)}">
+        <div class="review-widget-card-header">
+          <div class="review-widget-avatar" style="background:${getAvatarColor(review.author)};">${escapeHtml(getReviewInitials(review.author))}</div>
+          <div class="review-widget-author">
+            <strong>${escapeHtml(review.author)}</strong>
+            <span>${escapeHtml(review.location)}</span>
+          </div>
+          <span class="review-widget-platform">${escapeHtml(review.platform)}</span>
+        </div>
+        <div class="review-widget-meta">
+          <span class="review-widget-stars" aria-hidden="true">★★★★★</span>
+          ${timeMarkup}
+        </div>
+        <p class="review-widget-text">${escapeHtml(review.text)}</p>
+      </article>
+    `;
+  }
+
+  function initReviewsWidget(widget) {
+    const filterAttr = widget.getAttribute('data-review-filter') || 'all';
+    const filters = filterAttr
+      .split(',')
+      .map(value => value.trim().toLowerCase())
+      .filter(Boolean);
+
+    const reviews = filters.includes('all') || filters.length === 0
+      ? REVIEW_DATA
+      : REVIEW_DATA.filter(review => filters.includes(review.platform.toLowerCase()));
+
+    const track = widget.querySelector('[data-reviews-track]');
+    const status = widget.querySelector('[data-reviews-status]');
+    const pagination = widget.querySelector('[data-reviews-pagination]');
+    const prevButton = widget.querySelector('[data-reviews-prev]');
+    const nextButton = widget.querySelector('[data-reviews-next]');
+
+    if (!track || !status || !pagination || !prevButton || !nextButton || reviews.length === 0) {
+      return;
+    }
+
+    let currentPage = 1;
+    const totalPages = reviews.length;
+
+    function renderPagination() {
+      pagination.innerHTML = getReviewPages(totalPages, currentPage).map(page => {
+        if (typeof page !== 'number') {
+          return '<span class="reviews-widget-ellipsis" aria-hidden="true">...</span>';
+        }
+
+        const isActive = page === currentPage;
+        return `<button type="button" class="reviews-widget-page${isActive ? ' is-active' : ''}" data-review-page="${page}" aria-label="Go to review ${page}"${isActive ? ' aria-current="page"' : ''}>${page}</button>`;
+      }).join('');
+    }
+
+    function render() {
+      const review = reviews[currentPage - 1];
+      track.innerHTML = createReviewCard(review);
+      status.textContent = `Review ${currentPage} of ${totalPages}`;
+      prevButton.disabled = currentPage === 1;
+      nextButton.disabled = currentPage === totalPages;
+      renderPagination();
+    }
+
+    prevButton.addEventListener('click', function() {
+      if (currentPage > 1) {
+        currentPage -= 1;
+        render();
+      }
+    });
+
+    nextButton.addEventListener('click', function() {
+      if (currentPage < totalPages) {
+        currentPage += 1;
+        render();
+      }
+    });
+
+    pagination.addEventListener('click', function(event) {
+      const pageButton = event.target.closest('[data-review-page]');
+      if (!pageButton) {
+        return;
+      }
+
+      currentPage = Number(pageButton.getAttribute('data-review-page'));
+      render();
+    });
+
+    render();
+  }
+
+  document.querySelectorAll('[data-reviews-widget]').forEach(initReviewsWidget);
 
   // ---------- Form Validation & Submission ----------
   // Forms with action set to a real endpoint (e.g., FormSubmit) will submit normally
