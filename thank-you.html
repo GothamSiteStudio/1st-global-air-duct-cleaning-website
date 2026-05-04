@@ -124,7 +124,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="images/logo.png" alt="1st Global Air Duct Cleaning">
+          <img src="images/logo.png" alt="1st Global Air Duct Cleaning" loading="lazy" decoding="async">
           <p>Family-owned and operated since 2014. Serving Greater St. Louis with professional air duct and dryer vent cleaning. BBB Accredited &amp; Best of BusinessRate 2025.</p>
         </div>
         <div>
@@ -188,5 +188,24 @@
     Call Now
   </a>
   <script src="js/main.js"></script>
+
+  <!-- Phase 4: conversion event tracking -->
+  <script data-conv-tracking="installed">
+  (function(){
+    var _paq = window._paq = window._paq || [];
+    document.addEventListener('click', function(e){
+      var a = e.target && e.target.closest && e.target.closest('a');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (href.indexOf('tel:') === 0) _paq.push(['trackEvent','Conversion','phone_call_click', href.replace('tel:','')]);
+      else if (href.indexOf('mailto:') === 0) _paq.push(['trackEvent','Conversion','email_click', href.replace('mailto:','')]);
+      else if (/google\.[a-z.]+\/maps|goo\.gl\/maps/.test(href)) _paq.push(['trackEvent','Conversion','directions_click', href]);
+    });
+    document.addEventListener('submit', function(e){
+      var f = e.target;
+      if (f && f.tagName === 'FORM') _paq.push(['trackEvent','Conversion','form_submission', f.id || f.name || location.pathname]);
+    });
+  })();
+  </script>
 </body>
 </html>
