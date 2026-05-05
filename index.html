@@ -28,8 +28,9 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="images/video-poster.webp" fetchpriority="high">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"></noscript>
+  <link rel="preload" as="image" href="images/video-poster-800.webp" imagesrcset="images/video-poster-800.webp 800w, images/video-poster.webp 1512w" imagesizes="100vw" fetchpriority="high">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -74,8 +75,8 @@
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "100"
+      "ratingValue": "5.0",
+      "reviewCount": "376"
     }
   }
   </script>
@@ -216,7 +217,7 @@
 
   <!-- Hero Section with Image Background -->
   <section class="hero hero-with-image-bg">
-    <img class="hero-bg-image" src="images/video-poster.webp" alt="" aria-hidden="true" decoding="async" width="1512" height="2016" fetchpriority="high">
+    <img class="hero-bg-image" src="images/video-poster-800.webp" srcset="images/video-poster-800.webp 800w, images/video-poster.webp 1512w" sizes="100vw" alt="" aria-hidden="true" decoding="async" width="800" height="1067" fetchpriority="high">
     <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-content">
@@ -1009,5 +1010,6 @@
     });
   })();
   </script>
+  <script src="/js/cookie-consent.js" defer></script>
 </body>
 </html>

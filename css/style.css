@@ -210,12 +210,12 @@ section {
 }
 
 .btn-primary {
-  background-color: var(--color-accent);
+  background-color: var(--color-primary);
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-accent-dark);
+  background-color: var(--color-primary-dark);
   color: white;
   transform: translateY(-1px);
   box-shadow: var(--shadow-lg);
