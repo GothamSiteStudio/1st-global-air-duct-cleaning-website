@@ -81,7 +81,7 @@
     }
   ];
 
-  const REVIEW_AVATAR_COLORS = ['#4285F4', '#EA4335', '#FBBC04', '#34A853', '#0A4D8C', '#10B981', '#7C3AED', '#D97706'];
+  const REVIEW_AVATAR_COLORS = ['#1E40AF', '#991B1B', '#92400E', '#166534', '#0A4D8C', '#065F46', '#5B21B6', '#9A3412'];
 
   // ---------- Mobile Menu Toggle ----------
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
