@@ -1012,6 +1012,7 @@ textarea.form-control {
   font-size: 0.95rem;
 }
 
+.footer h3,
 .footer h4 {
   color: white;
   font-size: 1rem;
@@ -1933,7 +1934,7 @@ textarea.form-control {
   bottom: 16px;
   right: 16px;
   z-index: 99;
-  background: var(--color-accent);
+  background: var(--color-primary);
   color: white;
   padding: var(--space-md) var(--space-lg);
   border-radius: var(--radius-full);
@@ -1945,7 +1946,7 @@ textarea.form-control {
 }
 
 .sticky-call:hover {
-  background: var(--color-accent-dark);
+  background: var(--color-primary-dark);
   color: white;
 }
 
