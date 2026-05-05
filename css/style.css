@@ -1001,6 +1001,8 @@ textarea.form-control {
 
 .footer-brand img {
   height: 60px;
+  width: auto;
+  max-width: 200px;
   margin-bottom: var(--space-md);
   filter: brightness(0) invert(1);
 }
