@@ -132,7 +132,7 @@ NAP (Name, Address, Phone) consistency is critical for local SEO. If anything ch
 
 | What | Where |
 |------|-------|
-| Hero image | [images/video-poster.webp](images/video-poster.webp) (preloaded on home) |
+| Hero image | [images/clean-ductwork-hero.webp](images/clean-ductwork-hero.webp) (preloaded on home) |
 | City hero bg | [images/experienced-cleaners.webp](images/experienced-cleaners.webp) |
 | Logo | [images/logo.png](images/logo.png) |
 | Stylesheet | [css/style.css](css/style.css) |
