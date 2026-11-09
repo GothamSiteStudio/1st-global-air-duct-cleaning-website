@@ -49,7 +49,7 @@ You don't pay for hosting. The only recurring cost is the domain registration (r
 | Domain | 1stglobalairductcleaning.com | Whoever you bought the domain from |
 | Google Search Console | Verified by you (Mor) | Tracks how Google sees the site |
 | Google Business Profile | Yours | Source of the 5.0 / 376 reviews |
-| Matomo Analytics | matomo.alphalockandsafe.com (idsite=17) | Visitor analytics, no Google involved |
+| Matomo Analytics | matomo.gothamsitestudio.com (idsite=17) | Visitor analytics, no Google involved |
 | Microsoft Clarity | Project wm30bhzv51 | Heatmaps + session recordings |
 
 If you ever lose access to any of these, contact Oren.
@@ -59,7 +59,7 @@ If you ever lose access to any of these, contact Oren.
 ## 4. How to view your visitor data
 
 ### Matomo (visitor counts, pages visited, sources)
-1. Open https://matomo.alphalockandsafe.com/matomo/
+1. Open https://matomo.gothamsitestudio.com/matomo/
 2. Log in with credentials Oren provided
 3. Select dashboard for site #17
 

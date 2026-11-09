@@ -252,7 +252,7 @@ const buildPost = (post) => `<!DOCTYPE html>
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
-      var u = "https://matomo.alphalockandsafe.com/matomo/";
+      var u = "https://matomo.gothamsitestudio.com/matomo/";
       _paq.push(['setTrackerUrl', u + 'matomo.php']);
       _paq.push(['setSiteId', '17']);
       var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
@@ -263,7 +263,7 @@ const buildPost = (post) => `<!DOCTYPE html>
   </script>
 </head>
 <body>
-  <noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="https://matomo.alphalockandsafe.com/matomo/matomo.php?idsite=17&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+  <noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="https://matomo.gothamsitestudio.com/matomo/matomo.php?idsite=17&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 
   <div class="top-bar">
     <div class="container">

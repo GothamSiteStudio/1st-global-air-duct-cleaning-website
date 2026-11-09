@@ -13,7 +13,7 @@ This is a developer-facing companion to [README.md](README.md). It covers archit
 - **Domain:** `1stglobalairductcleaning.com` (via [CNAME](CNAME)).
 - **CSS:** single stylesheet at [css/style.css](css/style.css). All visual customization lives there.
 - **JS:** [js/main.js](js/main.js) (mobile menu, FAQ accordion, form validation), [js/cookie-consent.js](js/cookie-consent.js) (GDPR banner).
-- **Analytics:** Matomo (idsite=17 on `matomo.alphalockandsafe.com`) + Microsoft Clarity (project `wm30bhzv51`). Both are inlined in every HTML head.
+- **Analytics:** Matomo (idsite=17 on `matomo.gothamsitestudio.com`) + Microsoft Clarity (project `wm30bhzv51`). Both are inlined in every HTML head.
 - **Conversion tracking:** delegated `click` and `submit` listeners at the bottom of every page, pushing custom events into `_paq` for Matomo.
 
 ### URL structure
